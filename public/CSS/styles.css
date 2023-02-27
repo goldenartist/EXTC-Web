@@ -1,0 +1,1260 @@
+/* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+body {
+  margin: 0;
+  padding-top: 3rem;
+  padding-bottom: 0;
+  color: #5a5a5a;
+  font-family: 'Noto Serif', serif;
+}
+.row{
+  margin: 0;
+}
+
+
+/* CUSTOMIZE THE NAVBAR
+-------------------------------------------------- */
+/* Navbar base class */
+
+.linkzoom:hover{
+   transform: scale(1.1);
+}
+.padd {
+  padding: 0;
+}
+.ic{
+  margin-right:  15px;
+}
+.one:hover {
+  background-color: #eee;
+}
+
+.logo {
+  width: 150px;
+  height: 60px;
+  margin: 0 15px;
+  padding: 0;
+}
+
+.profile {
+  width: 30px;
+  height: 30px;
+  margin-left: 10px;
+}
+
+.menu {
+  margin-left: 10px;
+}
+
+.us {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  margin-left: 600px;
+}
+
+.us:hover {
+  color: white;
+}
+
+#dropdownMenuButton1 {
+  color: white;
+}
+
+.btncls {
+  font-size: 17px;
+  color: white;
+}
+
+.headline {
+  margin-bottom: 5px;
+  margin-top: 33px;
+  color: red;
+  box-shadow: 0 0 20px 4px rgba(0, 0, 0, .1);
+  transition: 2s;
+}
+
+.login {
+  text-decoration: none;
+}
+
+.btnlo {
+  margin-left: 30px;
+}
+
+.mid {
+  margin-left: 30px;
+}
+
+.input {
+  width: 250px;
+}
+.ed{
+  margin-left: 50px;
+}
+.navopen{
+  color: white;
+  }
+  .navopen:hover{
+    color: white;
+  }
+.outimgs{
+width: 22px;
+height: 22px;
+margin:  7px;
+}
+.log{
+  font-size: 22px;
+}
+.navopen1{
+  color: white;
+}
+.navopen1:hover{
+  color: white;
+}
+
+/* Student Page Styles
+-------------------------------------------------- */
+/* Styles given to student div */
+
+.studup{
+ box-shadow: 5px 5px rgb(4, 170, 109);
+  transition: 2s;
+  padding: 30px;
+  margin: 20px 50px;;
+}
+.oneimg12 {
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 50%;
+  background-position: center;
+  background-size: cover;
+  box-shadow: 0px 0px 16px 0px;
+}
+.iconsset{
+  color:rgb(4, 170, 109);
+  font-size:1.7rem;
+  margin:10px 15px;
+}
+.stprofile{
+  margin:10px 0 0 50px ;
+}
+.stone{
+  border-left: 3px solid #CEE5D0;
+}
+
+/* Welcome Div Styles
+-------------------------------------------------- */
+/* Styles given to first div */
+.welcome {
+  width: 100%;
+  height: 480px;;
+  background-color: #F2F2F2;
+  box-shadow: 0 0 20px 4px rgba(0, 0, 0, .1);
+  transition: 2s;
+}
+.homesubhead{
+  text-align: center;
+  font-family: 'Akaya Telivigala', cursive;
+margin-top: 40px;
+font-size: 25px;
+color: #9D5353;
+
+}
+.homesubhead1{
+  text-align: center;
+  font-family: 'Akaya Telivigala', cursive;
+margin: 10px 0 0 0;
+font-size: 25px;
+padding: 0;
+color: #9D5353;
+}
+.homesubhead12{
+  text-align: center;
+margin-top: 5px;
+padding: 0;
+}
+.left {
+  display: inline-block;
+  background-color: white;
+  border-radius: 0 0 300px 0;
+  background-image: linear-gradient(to right, #9AE66E, #CCFFBD);
+}
+
+.mainheading {
+  font-family: 'Akaya Telivigala', cursive;
+  font-size: 40px;
+  color: rgb(4, 170, 109);
+  text-align: center;
+    text-shadow:1px 1px 1px #89C9B8, 1px 1px 1px #ccc;
+}
+
+.headingdiv {
+  box-shadow: 0 0 20px 4px rgba(0, 0, 0, .1);
+  transition: 2s;
+  padding: 30px;
+  border-radius: 20px;
+  border-color: rgb(4, 170, 109) 20px;
+}
+
+.welimg{
+  margin: 20px 0 0 30px;
+}
+
+.btnup {
+  padding: 5px;
+  margin: 10px;
+  width: 150px;
+  border: 1px solid rgb(4, 170, 109);
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -webkit-box-shadow: 0px 0px 4px rgb(4, 170, 109);
+  -moz-box-shadow: 0px 0px 4px rgb(4, 170, 109);
+  box-shadow: 0px 0px 4px rgb(4, 170, 109);
+}
+
+.right {
+  display: inline-block;
+  text-align: center;
+}
+
+.head {
+  margin: 5px 0 0 100px;
+}
+
+.subsh {
+  padding: 20px 60px;
+}
+
+/* Profile Styles
+-------------------------------------------------- */
+/* Styles given to  profile page */
+
+.profup{
+  box-shadow: 0 0 25px 4px rgba(0, 0, 0, .1);
+  transition: 2s;
+  padding: 30px;
+}
+.itemsalign{
+  margin-left: 100px;
+}
+.itemsalign1{
+  margin-left: 20px;
+}
+.profmid{
+  text-align: center;
+    font-family: 'Akaya Telivigala', cursive;
+    font-size: 1.3rem;
+}
+.profmid h3 {
+ width: 100%;
+ text-align: center;
+ border-bottom: 2px solid rgb(4, 170, 109);
+ line-height: 0.1em;
+ margin: 10px 0 20px;
+}
+
+.profmid span {
+  background:#fff;
+  padding:0 10px;
+}
+
+
+
+/* successful page styles */
+
+.btnsuccess{
+  margin-left: 440px;
+}
+
+/* Notice and Alumini Styles
+-------------------------------------------------- */
+/* Styles given to  divs */
+.good {
+  box-shadow: 0 0 25px 4px rgba(0, 0, 0, .1);
+  transition: 2s;
+  border-radius: 20px;
+  padding: 0;
+}
+
+.noticeText{
+  background-color: rgb(4, 170, 109);
+  color: white;
+  border-radius: 0 0 70px 0;
+  padding: 10px;
+  text-align: left;
+}
+.noticeTexts{
+  background-color: #DEF5E5;
+  color: black;
+  border-radius: 0 0 70px 0;
+  padding: 10px;
+  text-align: left;
+}
+/* Lists styles */
+
+ul{
+  list-style-type:"⁕";
+}
+
+
+.listitemsnb{
+  color: red;
+  text-decoration: none;
+    text-align: left;
+
+    }
+
+    /* Alumini Styles */
+.allums{
+  margin-bottom: 30px;
+  color:rgb(4, 170, 109);
+  font-family: 'Akaya Telivigala', cursive;
+}
+    .allum{
+      margin-bottom: 30px;
+      color:rgb(4, 170, 109);
+      font-family: 'Akaya Telivigala', cursive;
+    }
+    .viewmore{
+      margin: 30px;
+      border-radius: 30px;
+    }
+
+.aluminia {
+  padding: 0;
+  text-align: center;
+
+}
+.uplift{
+  box-shadow: 0 0 20px 4px rgba(0, 0, 0, .1);
+  transition: 2s;
+  background-color: rgb(4, 170, 109);
+  color: white;
+  border-radius: 90px;
+  padding: 70px 20px 0 20px;
+}
+.alumini {
+  padding: 20px 0;
+}
+.oneimg {
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 50%;
+  background-position: center;
+  background-size: cover;
+  box-shadow: 0px 0px 16px 0px;
+}
+.aluminip{
+  padding: 5px 15px;
+}
+
+
+/* Features Section Styles
+-------------------------------------------------- */
+/* Styles given to  features */
+
+.headinggoal{
+  margin-top: 60px;
+  font-family: 'Akaya Telivigala', cursive;
+  color:rgb(4, 170, 109);
+}
+.featureshead{
+  font-family: 'Akaya Telivigala', cursive;
+  text-align: justify;
+}
+.fea {
+  width: 455px;
+  height: 295px;
+  box-shadow: 0 0 20px 4px rgba(0, 0, 0, .1);
+  transition: 2s;
+  border-radius: 40px;
+}
+.fea1{
+  box-shadow: 0 0 20px 4px rgba(0, 0, 0, .1);
+  transition: 2s;
+  border-radius: 40px;
+}
+.msghod{
+  font-family: 'Akaya Telivigala', cursive;
+font-size: 1.3rem;
+}
+
+
+
+
+/* Subscribe Button Styles
+-------------------------------------------------- */
+/* Styles given to  button */
+.button {
+  background-color: #1c87c9;
+  -webkit-border-radius: 60px;
+  border-radius: 60px;
+  border: none;
+  color: #eeeeee;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 20px;
+  padding: 5px 15px;
+  text-align: center;
+  text-decoration: none;
+  margin: 10px 0 0 10px;
+}
+
+@keyframes glowing {
+  0% {
+    background-color: #E0144C;
+    box-shadow: 0 0 5px #FF5858;
+  }
+
+  50% {
+    background-color: #FF1E00;
+    box-shadow: 0 0 20px #DD5353;
+  }
+
+  100% {
+    background-color: #FF1E1E;
+    box-shadow: 0 0 5px #E14D2A;
+  }
+}
+
+.button {
+  animation: glowing 1300ms infinite;
+}
+
+/* Subscribe Form Styles
+     -------------------------------------------------- */
+/* Form base class */
+.subscribe {
+  box-shadow: 0 0 20px 4px rgba(0, 0, 0, .1);
+  border-radius: 20px;
+  transition: 2s;
+  padding: 50px;
+  margin-top: 60px;
+}
+
+.headsubs {
+  font-family: 'Akaya Telivigala', cursive;
+  color: rgb(4, 170, 109);
+}
+
+.headsubs1 {
+  font-family: 'Akaya Telivigala', cursive;
+  color: white;
+  margin-top: 30px;
+}
+
+.introsubs {
+  padding: 30px;
+}
+
+.subsleft {
+  background-color: rgb(4, 170, 109);
+  border-radius: 20px;
+}
+
+.iconssubs {
+  font-size: 24px;
+  margin: 15px;
+}
+.subssign{
+  color:white;
+  border-color:white;
+   width:150px;
+   border-radius: 30px;
+}
+.subsinput {
+  box-shadow: 0 0 20px 4px rgba(0, 0, 0, .1);
+  transition: 2s;
+  border-width: 1.5px;
+  padding: 7px;
+  width: 250px;
+  border-radius: 10px;
+}
+.subscribe .if{
+  color: black;
+}
+
+/* CUSTOMIZE THE Guide Page
+-------------------------------------------------- */
+/* Guide Page base class */
+
+.upg{
+  height: 22px;
+}
+.titleline{
+  overflow: hidden;
+  position: fixed;
+  box-shadow: 0 0 20px 4px rgba(0, 0, 0, .1);
+    transition: 2s;
+    width: 100%;
+    background-color: #F6FBF4;
+    z-index: 1000;
+  }
+.ag{
+  color: rgb(4, 170, 109);
+  font-size: 1.1rem;
+}
+.gimg{
+  width: 600px;
+  height: 500px;
+}
+.ghead{
+  font-family: 'Akaya Telivigala', cursive;
+  color: rgb(4, 170, 109);
+  text-align: center;
+  margin-top: 60px;
+}
+.gsubhead{
+  font-family: 'Akaya Telivigala', cursive;
+  text-align: center;
+
+}
+.icong{
+  margin: 15px;
+}
+.programming{
+  margin-top: 30px;
+  font-family: 'Akaya Telivigala', cursive;
+  color:rgb(4, 170, 109);
+  margin-left: 60px;
+}
+.courseimg{
+  width: 250px;
+  height: 150px;
+}
+.progdiv a{
+  text-decoration: none;
+  color: white;
+}
+.progdiv1 a{
+  text-decoration: none;
+  color: black;
+}
+.deptli12{
+  margin-left: 250px;
+}
+
+/* CUSTOMIZE THE STUDENT Page
+-------------------------------------------------- */
+/* Student Page base class */
+
+.studentmain{
+  margin-top: 30px;
+  width: 100%;
+min-height: 10vh;
+background-image: linear-gradient(to right,rgb(4, 170, 109,0.92) 45%,rgb(13, 110, 253, 0.01)), url(https://media.istockphoto.com/id/1226985345/photo/circuit-board-blue-computer-data-technology-artificial-intelligence.jpg?b=1&s=170667a&w=0&k=20&c=YoRLNkR12YecL_37iNcRiMby8sKxflHC-4uenr-9sHw=);
+background-position: center;
+background-size: cover;
+text-align: center;
+}
+.studentimg{
+  width: 610px;
+  margin-top: 18px;
+  height: 440px;
+}
+.norm1{
+  font-family: 'Akaya Telivigala', cursive;
+margin-top: 100px;
+}
+.btnup1{
+  padding: 5px;
+  margin: 10px;
+  width: 150px;
+  border: 1px solid white;
+  -webkit-border-radius: white;
+  -moz-border-radius: 30px;
+  -webkit-box-shadow: 0px 0px 4px white;
+  -moz-box-shadow: 0px 0px 4px white;
+  box-shadow: 0px 0px 4px white;
+}
+.studentssection{
+  text-align: center;
+}
+.mobset{
+  margin-top: 20px;
+}
+
+/* CUSTOMIZE THE Account Page
+-------------------------------------------------- */
+/* Account Page base class */
+.accountprimage{
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 50%;
+  background-position: center;
+  background-size: cover;
+  box-shadow: 0px 0px 16px 0px;
+  margin: 10px 0 0 200px;
+}
+.innerdivac{
+  margin-top: 26px;
+  display: flex;
+}
+.achr{
+  width: 230px;
+}
+.sidenav{
+  height: 100%;;
+  width: 290px;
+  position: fixed;
+z-index: 1;
+color: black;
+overflow-x: hidden;
+padding:30px 10px 150px 30px;
+}
+.maindivac{
+  margin-left: 290px;
+  height: 100%;
+  width: 100%;
+  padding:  20px;
+  box-shadow: 0 0 20px 4px rgba(0, 0, 0, .1);
+  transition: 2s;
+}
+.maindivac1{
+  margin-top: 25px;
+  height: 100%;
+  width: 100%;
+  padding:  20px;
+  box-shadow: 0 0 20px 4px rgba(0, 0, 0, .1);
+  transition: 2s;
+}
+.aclinks{
+  color: black;
+  text-decoration: none;
+  }
+.iconsac{
+  margin: 12px;
+}
+.iconsac1{
+  margin: 12px;
+  font-size: 25px;
+}
+.introac{
+  box-shadow: 0 0 20px 4px rgba(0, 0, 0, .1);
+  transition: 2s;
+  padding: 20px;
+  border-radius: 20px;
+}
+.acinputs{
+  box-shadow: 0 0 20px 4px rgba(0, 0, 0, .1);
+  transition: 2s;
+  border-width: 1.5px;
+  padding: 7px;
+  border-radius: 10px;
+  margin: 10px 40px;
+  width: 400px;
+}
+.acinputs1{
+  box-shadow: 0 0 20px 4px rgba(0, 0, 0, .1);
+  transition: 2s;
+  border-width: 1.5px;
+  padding: 7px;
+  border-radius: 10px;
+  margin: 10px 40px;
+  width: 885px;
+}
+.acinputs2{
+  box-shadow: 0 0 20px 4px rgba(0, 0, 0, .1);
+  transition: 2s;
+  border-width: 1.5px;
+  padding: 7px;
+  border-radius: 10px;
+  margin: 10px 40px 10px 5px;
+  width: 270px;
+}
+.acinputs23{
+  box-shadow: 0 0 20px 4px rgba(0, 0, 0, .1);
+  transition: 2s;
+  border-width: 1.5px;
+  padding: 7px;
+  border-radius: 10px;
+  margin: 10px 0 10px 130px;
+  width: 400px;
+}
+.helloac{
+    font-family: 'Akaya Telivigala', cursive;
+    font-size: 30px;
+}
+
+.acbtn{
+  width: 140px;
+  border-radius: 20px;
+  border-width: 2px;
+  margin: 10px 0 0 420px;
+}
+
+.resumelink{
+text-decoration: none;
+}
+
+/* CUSTOMIZE THE Department PAGE
+-------------------------------------------------- */
+/*Department base class */
+
+.depthead{
+  margin-top: 30px;
+  width: 100%;
+min-height: 9vh;
+padding: 5%;
+background-image: linear-gradient(to right ,rgb(13, 110, 253, 0.30),rgb(4, 170, 109) 80%), url(/Images/backg.jpg);
+background-position: center;
+background-size: cover;
+}
+.norm{
+  font-family: 'Akaya Telivigala', cursive;
+}
+
+.headinggoalalbum{
+  text-shadow: -1px -1px 0 yellow, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  font-size: 40px;
+  color: white;
+  text-align: center;
+  font-family: 'Akaya Telivigala', cursive;
+}
+.oneal{
+  color: #F65A83;
+
+}
+.twoal{
+  color: #fde899;
+}
+.ide{
+  margin-right: 8px;
+}
+.fixedprofiles{
+  box-shadow: 0 0 20px 4px rgba(0, 0, 0, .1);
+  transition: 2s;
+  background-color: #EEEEEE;
+}
+.oneimg1{
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 20%;
+  background-position: center;
+  background-size: cover;
+  box-shadow: 0px 0px 16px 0px;
+}
+.deptli1{
+  margin-left: 180px;
+}
+.deptli{
+margin: 0 10px;
+}
+.subsly{
+  box-shadow: 0 0 20px 4px rgba(0, 0, 0, .1);
+  transition: 2s;
+  background-color: #EEEEEE;
+  text-align: center;
+}
+.subsly1{
+text-align: center;
+}
+.ssbtn{
+  width: 140px;
+  margin: 0 5px;
+}
+.borderss{
+  margin: 20px 100px;
+}
+.minipr{
+  box-shadow: 0 0 20px 4px rgba(0, 0, 0, .1);
+  transition: 2s;
+}
+.minimg{
+  width: 500px;
+  height: 350px;
+  margin: 30px;
+}
+.btnlists{
+text-align: center;
+}
+.btnlists a {
+  text-decoration: none;
+}
+.ek{
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.btnname{
+margin-left: 460px;
+font-size: 20px;
+}
+.prhead{
+  margin-top: 20px;
+}
+.prpara{
+  margin: 40px 20px;
+  font-size: 20px;
+}
+.uploadpr{
+  box-shadow: 0 0 20px 4px rgba(0, 0, 0, .1);
+  transition: 2s;
+  border-width: 1.5px;
+  padding: 7px;
+  border-radius: 10px;
+  margin-right: 5px;
+  width: 250px;
+}
+
+/* CUSTOMIZE THE ALBUM PAGE
+-------------------------------------------------- */
+/*lbum base class */
+
+
+
+.albummain{
+  box-shadow: 0 0 20px 4px rgba(0, 0, 0, .1);
+  transition: 2s;
+}
+.inneralbumdiv{
+  box-shadow: 0 0 20px 4px rgba(0, 0, 0, .1);
+  transition: 2s;
+  padding:30px 50px 0 50px;
+}
+
+/* CUSTOMIZE THE FOOTER
+-------------------------------------------------- */
+/* footer base class */
+
+.footimg{
+width: 220px;
+height: 80px;
+margin: 10px;
+}
+.ftleft{
+  padding: 30px;
+  color: white;
+}
+.foota{
+  color: white;
+  text-decoration: none;
+}
+.foota1{
+  color: white;
+}
+.ftright{
+  text-align: left;
+  padding: 30px;
+  color: white;
+}
+.foothr1{
+  color: white;
+  margin: 0 40px;
+}
+.foothr{
+  color: white;
+}
+.acinputsfoot{
+  box-shadow: 0 0 20px 4px rgba(0, 0, 0, .1);
+  transition: 2s;
+  border-width: 1.5px;
+  padding: 7px;
+  border-radius: 10px;
+  margin: 20px 10px ;
+  width: 300px;
+}
+.footlastline{
+  margin: 10px 40px 0 40px;
+  padding: 5px 0 50px;
+}
+.footicon{
+  margin: 10px 10px 10px 620px;
+  color: white;
+}
+.footicon1{
+  margin:10px 10px 10px 10px;
+  color: white;
+}
+
+
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+/* Carousel base class */
+.carousel {
+  margin-bottom: 4rem;
+}
+
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  bottom: 3rem;
+  z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel-item {
+  height: 32rem;
+}
+
+.carousel-item>img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 32rem;
+}
+
+/* MARKETING CONTENT
+-------------------------------------------------- */
+/* Center align the text within the three columns below the carousel */
+.marketing .col-lg-4 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.marketing h2 {
+  font-weight: 400;
+}
+
+/* rtl:begin:ignore */
+.marketing .col-lg-4 p {
+  margin-right: .75rem;
+  margin-left: .75rem;
+}
+
+/* rtl:end:ignore */
+/* Featurettes
+------------------------- */
+.featurette-divider {
+  margin: 3rem 0 2rem 0;
+  /* Space out the Bootstrap <hr> more */
+}
+
+/* Thin out the marketing headings */
+.featurette-heading {
+  font-weight: 300;
+  line-height: 1;
+  /* rtl:remove */
+  letter-spacing: -.05rem;
+}
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+@media (min-width: 40em) {
+
+  /* Bump up size of carousel content */
+  .carousel-caption p {
+    margin-bottom: 1.25rem;
+    font-size: 1.25rem;
+    line-height: 1.4;
+  }
+
+  .featurette-heading {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 62em) {
+  .featurette-heading {
+    margin-top: 7rem;
+  }
+}
+
+@media(max-width:480px) {
+
+.subscribe .if{
+  font-size: 1.8rem;
+}
+footer .if{
+  font-size: 1.8rem;
+}
+
+/* successful page */
+
+.btnsuccess{
+  margin-left: 35px;
+}
+.skillsit{
+  padding:15px;
+overflow:  auto;
+}
+.itemsalign{
+  margin-left: 0;
+}
+.itemsalign1{
+margin-left: 0px;
+}
+
+  /* Responsive Navbar */
+  .profile {
+    width: 60px;
+    height: 60px;
+    margin-left: 5px;
+  }
+
+  .menu {
+    margin-left: 5px;
+  }
+
+  .logo {
+    width: 130px;
+    height: 50px;
+      }
+      .mobguide{
+        margin-left:  40px;
+      }
+
+  .us {
+    margin-left: 20px;
+  }
+
+  .headline {
+margin: 25px 10px 10px ;
+  }
+.logo{
+  margin: 0 5px;
+}
+  /* Responsive Welcome Page */
+  .welcome {
+width: 100%;
+    height: 700px;
+    margin: 0;
+  }
+.right{
+  background-color: #F2F2F2;
+  padding-bottom: 20px;
+}
+.mainheading{
+  font-size: 30px;
+}
+  .welimg {
+    width: 370px;
+    height: 270px;
+    margin: 10px 0 0 10px;
+  }
+.mainheading{
+  font-size: 43px;
+  margin: 10px;
+}
+  .head {
+    margin: 100px 0 0 40px;
+  }
+
+  .button {
+    font-size: 18px;
+    margin: 20px 0 0 250px;
+  }
+
+  /* Aluminia Responsive */
+
+.allum{
+  margin: 230px 0 30px 0;
+}
+
+  .aluminia {
+    padding-left: 5px;
+  }
+
+  .good {
+    width: 100%;
+  }
+  /* Responsive Features div Headings */
+.fea{
+width: 372px;
+height: 230px;
+}
+.fea1{
+  width: 372px;
+}
+.featureshead{
+margin-top: 20px;
+}
+.mobset{
+  padding-left: 0;
+}
+
+  /* Responsive Official supporters div Headings */
+
+.supporters{
+  padding: 0 20px;
+  text-align: left;
+
+}
+.officalss{
+  padding-left: 30px;
+}
+.offbtn{
+margin: 10px 0 30px 100px;
+}
+
+  /* Responsive Subscribe Page */
+
+.subscribe{
+  margin-top: 25px;
+  padding: 30px;
+}
+#Subscribebtn{
+  padding: 0 12px;
+}
+.subssign{
+  margin: 5px 0 20px 0;
+}
+.introsubs{
+  margin-bottom: 0;
+}
+.headsubs{
+  margin: 30px 0;
+}
+
+
+  /* Responsive Footer */
+
+.footicon{
+  margin: 30px 10px 0 100px;
+}
+.footermob a{
+  color: white;
+  text-decoration: none;
+  padding: 5px 0 0 50px;
+}
+.anchorfoot{
+margin-left: 50px;
+}
+.anchorfoot1{
+margin-left: 30px;
+}
+.anchorfoot12{
+margin-left: 40px;
+}
+
+  /* Responsive Account Page */
+.accountprimage{
+margin: 30px 0 0 45px;
+}
+.mobcrac{
+  padding-left:  0;
+}
+
+.oneimg{
+  width: 190px;
+  height: 190px;
+}
+  .acinputs{
+    width: 330px;
+    margin: 5px;
+  }
+  .acinputs1{
+    width: 330px;
+    margin: 5px;
+  }
+ .acinputs2{
+   width: 330px;
+   margin: 5px;
+ }
+ .acinputs23{
+   margin: 5px;
+   width: 330px;
+ }
+ .acbtn{
+   margin: 5px 0 15px 105px;
+ }
+ .sidenav{
+   width: 220px;
+   padding:30px 0 150px 15px;
+
+ }
+ .resume{
+ padding: 20px 0 20px 10px;
+ }
+ .maindivac{
+     margin-left: 210px;
+     padding: 10px;
+ }
+ .resumeimg{
+   margin: 20px 0 0 5px;
+   width: 330px;
+   height: 260px;
+ }
+ .introac{
+   padding: 5px;
+ }
+
+/* Responsive Guide Page */
+
+.upg{
+  height: 12px;
+}
+.gimg{
+  width: 390px;
+  height: 300px;
+  margin-top: 0px;
+}
+.ghead{
+  margin-top: 20px;
+}
+.deptli12{
+  margin-left: 10px;
+}
+.mobileset{
+  padding: 0;
+}
+/* Responsive Student Page */
+
+.studentimg{
+  width:350px ;
+  height:250px;
+}
+.norm1{
+  margin-top: 30px;
+}
+.allums{
+  margin-top: 10px;
+}
+.mobset{
+  margin-top: 0px;
+}
+.studup{
+  margin: 10px 15px;
+  padding: 30px 10px;
+}
+.profilename{
+  margin-top: 20px;
+}
+.stprofile{
+  margin-left: 5px;
+}
+.stmobile1{
+  margin-left: 65px;
+}
+
+/* Responsive Department Page */
+
+
+.deptli1{
+  margin-left: 10px;
+}
+.ssbtn{
+  width: 129px;
+  margin: 10px 0 0 0;
+}
+.mss{
+  padding: 0;
+  width: 400px;
+}
+.borderss{
+  margin: 20px 50px;
+}
+.minimg{
+  width: 320px;
+  height: 200px;
+}
+.btnname{
+  margin-left: 10px;
+}
+.prhead{
+  margin-top: 0;
+}
+.prpara{
+  margin-top:10px;
+}
+.uploadpr{
+  width: 200px;
+  margin-bottom: 40px;
+}
+}

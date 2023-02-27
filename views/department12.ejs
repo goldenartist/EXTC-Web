@@ -1,0 +1,1577 @@
+<%- include('header'); -%>
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+  <script src="https://kit.fontawesome.com/813dc46a5e.js" crossorigin="anonymous"></script>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Acme&family=BIZ+UDMincho&family=Beau+Rivage&family=Bree+Serif&family=Courgette&family=Lobster&family=Merriweather:wght@300&family=Noto+Serif&family=Patrick+Hand&family=Ramaraja&family=Rubik+Wet+Paint&family=Sacramento&family=Satisfy&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.1.1/css/all.css">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+  <!--Dropdown navbar-->
+
+  <div class="mothitaki">
+
+
+
+    <style>
+      /*body {
+                        font-family: Arial, Helvetica, sans-serif;
+                    }*/
+
+      .topnavbar {
+        overflow: visible;
+        background-color: #333;
+        margin: 2rem 0rem 0 30rem;
+        display: inline-flex;
+        /*width: 100%;*/
+        align-items: center;
+        border-radius: 15px;
+
+        position: sticky;
+        top: 2.5rem;
+
+
+
+      }
+
+      .topnavbar a {
+        /*float: right;*/
+        font-size: 16px;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+
+      .topdown {
+        /*float: right;*/
+        /* overflow: hidden;*/
+        /*text-align: center;*/
+      }
+
+      .topdown .topbtn {
+        font-size: 16px;
+        border: none;
+        outline: none;
+        color: white;
+        padding: 14px 16px;
+        background-color: inherit;
+        font-family: inherit;
+        margin: 0;
+      }
+
+      .topnavbar a:hover,
+      .topdown:hover .topbtn {
+        background-color: red;
+      }
+
+      .topdownc {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+      }
+
+      .topdownc a {
+        float: none;
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+      }
+
+      .topdownc a:hover {
+        background-color: #ddd;
+      }
+
+      .topdown:hover .topdownc {
+        display: block;
+      }
+    </style>
+    </head>
+
+    <body>
+
+
+      <div class="topnavbar">
+        <a href="#taki"><i class="fa-regular fa-chalkboard-user"></i> Faculty</a>
+        <div class="topdown">
+          <button class="topbtn"><i class="fa-regular fa-graduation-cap"></i> Academics
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="topdownc">
+            <a href="#subsly">Subjects & Syllabus</a>
+            <a href="#schtim">Schedule & Timetable</a>
+            <a href="#labpra">Labs & Practicals</a>
+            <a href="#minip">Miniproject</a>
+            <a href="#semi">Seminar</a>
+          </div>
+        </div>
+        <a href="#events"><i class="fa-light fa-calendar-days"></i> Events</a>
+        <a href="#achievements"><i class="fa-regular fa-trophy"></i> Achievements</a>
+      </div>
+
+
+
+
+      <div class="taki" id="taki">
+
+
+        <!--  <div class="leftnav">
+                        <a href="#taki"><i class="fa-regular fa-chalkboard-user"></i> Faculty</a>
+                        <button class="leftdrop"><i class="fa-regular fa-graduation-cap"></i> Academics
+                            <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="tank">
+                        <a href="#subsly">Subjects & Syllabus</a>
+                        <a href="#schtim">Schedule & Timetable</a>
+                        <a href="#labpra">Labs & Practicals</a>
+                        <a href="#minip">Miniproject</a>
+                        <a href="#semi">Seminar</a>
+                    </div>
+                    <a href="#events"><i class="fa-light fa-calendar-days"></i> Events</a>
+                    <a href="#achievements"><i class="fa-regular fa-trophy"></i> Achievements</a>
+                </div> -->
+
+
+
+        <div class="facultyimg">
+
+
+          <div class="aboutdepart">
+            <div class="depart">
+              <img class="depart1" src="/Images/dept11.png" alt="">
+            </div>
+          </div>
+          <style>
+            .depart1 {
+              /* width: 1485px;*/
+              margin: 18px;
+            }
+          </style>
+
+          <hr>
+          <h1 class="headfac">Faculty </h1>
+          <hr>
+          <div class="facimg">
+
+
+            <div class="nalbalwar">
+              <img class="doctor" src="/Images/nalbalwar.png" alt="">
+              <h5><br></be>Dr. S. L. Nalbalwar </h5><span>PROFESSOR & HOD<br>B.E. (CSE),M.E.
+                (Electronics
+                Engg.),Ph.D (Signal Processing)</span>
+              <h6>Email: slnalbalwar@dbatu.ac.in<br>Phone No: 8793814621</h6>
+              <a href="https://dbatu.ac.in/dr-sanjay-l-nalbalwar/" type="button" class="btn btn-success">View Profile <i class="fa-solid fa-user"></i></a>
+            </div>
+            <div class="nalbalwar">
+              <img class="doctor" src="/Images/Fav3.png" alt="">
+              <h5>Prof. s. v. Khobragade </h5><span>PROFESSOR & HOD<br>B.E. (CSE),M.E.
+                (Electronics
+                Engg.),Ph.D (Signal Processing)</span>
+              <h6>Email: slnalbalwar@dbatu.ac.in<br>Phone No: 8793814621</h6>
+              <a href="#" type="button" class="btn btn-success">View Profile <i class="fa-solid fa-user"></i></a>
+            </div>
+            <div class="nalbalwar">
+              <img class="doctor" src="/Images/Fav3.png" alt="">
+              <h5><br>Prof. N. S. Jadhav</h5><span>PROFESSOR & HOD<br>B.E. (CSE),M.E. (Electronics
+                Engg.),Ph.D (Signal Processing)</span>
+              <h6>Email: slnalbalwar@dbatu.ac.in<br>Phone No: 8793814621</h6>
+              <a href="#" type="button" class="btn btn-success">View Profile <i class="fa-solid fa-user"></i></a>
+            </div>
+
+            <div class="nalbalwar">
+              <img class="doctor" src="/Images/Fav3.png" alt="">
+              <h5><br>Dr. S. L. Nalbalwar </h5><span>PROFESSOR & HOD<br>B.E. (CSE),M.E. (Electronics
+                Engg.),Ph.D (Signal Processing)</span>
+              <h6>Email: slnalbalwar@dbatu.ac.in<br>Phone No: 8793814621</h6>
+              <a href="#" type="button" class="btn btn-success">View Profile <i class="fa-solid fa-user"></i></a>
+            </div>
+          </div>
+
+
+
+
+          <!--<div class="row">
+                                <div class="col-lg-4 alumini">
+                                    <img class="oneimg border border-2" src="/Images/Fav.jpg" alt=""> <br>
+                                    <br>
+                                    <h2>Adesh Salsundar</h2>
+                                    <p class="aluminip"> B.Tech (Electronics and Telecommunication
+                                        Engineering)
+                                        Dr.Babasaheb Ambedkar Technological University</p>
+                                    <p><a href="#" type="button" class="btn btn-success">View Profile <i
+                                                class="fa-solid fa-user"></i></a></p>
+                                </div>
+                                <div class="col-lg-4 alumini">
+                                    <img class="oneimg border border-2" src="/Images/Fav.jpg" alt=""> <br>
+                                    <br>
+                                    <h2>Heading 3</h2>
+                                    <p class="aluminip">Another exciting bit of representative placeholder
+                                        content. This time, we've moved on to the second column.</p>
+                                    <p><a href="#" type="button" class="btn btn-success">View Profile <i
+                                                class="fa-solid fa-user"></i></a></p>
+                                </div>
+                                <div class="col-lg-4 alumini">
+                                    <img class="oneimg border border-2" src="/Images/Fav.jpg" alt=""> <br>
+                                    <br>
+                                    <h2>Heading 4</h2>
+                                    <p class="aluminip">And lastly this, the third column of representative
+                                        placeholder content.</p>
+                                    <p><a href="#" type="button" class="btn btn-success">View Profile <i
+                                                class="fa-solid fa-user"></i></a></p>
+                                </div>
+                            </div> -->
+
+
+
+          <!-- Three columns of text below the carousel -->
+
+          <!-- Mobile Screen Carousal -->
+          <div class="smallmobilec aluminia">
+            <!-- <h1 class="allum">Our Alumni</h1> -->
+            <hr class="border border-success border-1">
+            <h5>The opportunity to rekindle old friendships through the alumni search facility.</h5>
+            <br>
+
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div style="height:460px;" class="carousel-item active">
+                  <div class=" alumini">
+                    <img class="oneimg border border-2" src="/Images/Fav.jpg" alt=""> <br> <br>
+                    <h2>Adesh Salsundar 6</h2>
+                    <p> B.Tech (Electronics and Telecommunication Engineering) Dr.Babasaheb
+                      Ambedkar
+                      Technological University</p>
+
+                    <p> <a href="#" type="button" class="btn btn-success">View Profile <i class="fa-solid fa-user"></i></a></p>
+                  </div>
+                </div>
+                <div style="height:460px;" class="carousel-item">
+                  <div class=" alumini">
+                    <img class="oneimg border border-2" src="/Images/Fav.jpg" alt=""> <br> <br>
+                    <h2>Adesh Salsundar 5</h2>
+                    <p> B.Tech (Electronics and Telecommunication Engineering) Dr.Babasaheb
+                      Ambedkar
+                      Technological University</p>
+                    <p> <a href="#" type="button" class="btn btn-success">View Profile <i class="fa-solid fa-user"></i></a></p>
+                  </div>
+                </div>
+                <div style="height:460px;" class="carousel-item">
+                  <div class=" alumini">
+                    <img class="oneimg border border-2" src="/Images/Fav.jpg" alt=""> <br> <br>
+                    <h2>Adesh Salsundar 4</h2>
+                    <p> B.Tech (Electronics and Telecommunication Engineering) Dr.Babasaheb
+                      Ambedkar
+                      Technological University</p>
+                    <p> <a href="#" type="button" class="btn btn-success">View Profile <i class="fa-solid fa-user"></i></a></p>
+                  </div>
+                </div>
+                <div style="height:460px;" class="carousel-item">
+                  <div class=" alumini">
+                    <img class="oneimg border border-2" src="/Images/Fav.jpg" alt=""> <br> <br>
+                    <h2>Adesh Salsundar 3</h2>
+                    <p> B.Tech (Electronics and Telecommunication Engineering) Dr.Babasaheb
+                      Ambedkar
+                      Technological University</p>
+                    <p> <a href="#" type="button" class="btn btn-success">View Profile <i class="fa-solid fa-user"></i></a></p>
+                  </div>
+                </div>
+                <div style="height:460px;" class="carousel-item">
+                  <div class=" alumini">
+                    <img class="oneimg border border-2" src="/Images/Fav.jpg" alt=""> <br> <br>
+                    <h2>Adesh Salsundar 2</h2>
+                    <p> B.Tech (Electronics and Telecommunication Engineering) Dr.Babasaheb
+                      Ambedkar
+                      Technological University</p>
+                    <p> <a href="#" type="button" class="btn btn-success">View Profile <i class="fa-solid fa-user"></i></a></p>
+                  </div>
+                </div>
+                <div style="height:460px;" class="carousel-item">
+                  <div class=" alumini">
+                    <img class="oneimg border border-2" src="/Images/Fav.jpg" alt=""> <br> <br>
+                    <h2>Adesh Salsundar 1</h2>
+                    <p> B.Tech (Electronics and Telecommunication Engineering) Dr.Babasaheb
+                      Ambedkar
+                      Technological University</p>
+                    <p> <a href="#" type="button" class="btn btn-success">View Profile <i class="fa-solid fa-user"></i></a></p>
+                  </div>
+                </div>
+              </div>
+              <p><a class="btn btnmore btn-success" href="#">View More &raquo;</a></p>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+
+          </div>
+
+          <!-- Big Screen carousal -->
+          <div class="Bigscreen aluminia">
+            <!--<h1 class="allum">Our Alumni</h1>-->
+            <!--<hr class="border border-success border-1">
+                        <h5>The opportunity to rekindle old friendships through the alumni search facility.</h5> <br>-->
+            <div id="carouselExampleControls" class="carousel  slide" data-bs-ride="carousel">
+              <div class="uplift carousel-inner">
+                <div class="carousel-item active">
+                  <div class="row">
+                    <div class="col-lg-3 alumini">
+                      <img class="oneimg border border-2" src="/Images/Fav.jpg" alt=""> <br>
+                      <br>
+                      <h3>Adesh Salsundar </h3>
+                      <p class="aluminip"> B.Tech (Electronics and Telecommunication
+                        Engineering)
+                        Dr.Babasaheb Ambedkar Technological University</p>
+                      <p><a href="#" type="button" class="btn btn-success">View Profile <i class="fa-solid fa-user"></i></a></p>
+                    </div>
+                    <div class="col-lg-3 alumini">
+                      <img class="oneimg border border-2" src="/Images/Fav2.jpg" alt=""> <br>
+                      <br>
+                      <h3>Kundan Somewad</h3>
+                      <p class="aluminip">Another exciting bit of representative placeholder
+                        content. This time, we've moved on to the second column.</p>
+                      <p><a href="#" type="button" class="btn btn-success">View Profile <i class="fa-solid fa-user"></i></a></p>
+                    </div>
+                    <div class="col-lg-3 alumini">
+                      <img class="oneimg border border-2" src="/Images/Fav3.png" alt=""> <br>
+                      <br>
+                      <h3>Rohit Ingole</h3>
+                      <p class="aluminip"> B.Tech (Electronics and Telecommunication
+                        Engineering)
+                        Dr.Babasaheb Ambedkar Technological University</p>
+                      <p><a href="#" type="button" class="btn btn-success">View Profile <i class="fa-solid fa-user"></i></a></p>
+                    </div>
+                    <div class="col-lg-3 alumini">
+                      <img class="oneimg border border-2" src="/Images/Fav3.png" alt=""> <br>
+                      <br>
+                      <h3>Rohit Ingole</h3>
+                      <p class="aluminip"> B.Tech (Electronics and Telecommunication
+                        Engineering)
+                        Dr.Babasaheb Ambedkar Technological University</p>
+                      <p><a href="#" type="button" class="btn btn-success">View Profile <i class="fa-solid fa-user"></i></a></p>
+                    </div>
+                  </div>
+
+                </div>
+                <div class="carousel-item">
+                  <div class="row">
+                    <div class="col-lg-4 alumini">
+                      <img class="oneimg border border-2" src="/Images/Fav.jpg" alt=""> <br>
+                      <br>
+                      <h2>Adesh Salsundar</h2>
+                      <p class="aluminip"> B.Tech (Electronics and Telecommunication
+                        Engineering)
+                        Dr.Babasaheb Ambedkar Technological University</p>
+                      <p><a href="#" type="button" class="btn btn-success">View Profile <i class="fa-solid fa-user"></i></a></p>
+                    </div>
+                    <div class="col-lg-4 alumini">
+                      <img class="oneimg border border-2" src="/Images/Fav.jpg" alt=""> <br>
+                      <br>
+                      <h2>Heading 3</h2>
+                      <p class="aluminip">Another exciting bit of representative placeholder
+                        content. This time, we've moved on to the second column.</p>
+                      <p><a href="#" type="button" class="btn btn-success">View Profile <i class="fa-solid fa-user"></i></a></p>
+                    </div>
+                    <div class="col-lg-4 alumini">
+                      <img class="oneimg border border-2" src="/Images/Fav.jpg" alt=""> <br>
+                      <br>
+                      <h2>Heading 4</h2>
+                      <p class="aluminip">And lastly this, the third column of representative
+                        placeholder content.</p>
+                      <p><a href="#" type="button" class="btn btn-success">View Profile <i class="fa-solid fa-user"></i></a></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="row">
+                    <div class="col-lg-4 alumini">
+                      <img class="oneimg border border-2" src="/Images/Fav.jpg" alt=""> <br>
+                      <br>
+                      <h2>Adesh Salsundar</h2>
+                      <p class="aluminip"> B.Tech (Electronics and Telecommunication
+                        Engineering)
+                        Dr.Babasaheb Ambedkar Technological University</p>
+                      <p><a href="#" type="button" class="btn btn-success">View Profile <i class="fa-solid fa-user"></i></a></p>
+                    </div>
+                    <div class="col-lg-4 alumini">
+                      <img class="oneimg border border-2" src="/Images/Fav.jpg" alt=""> <br>
+                      <br>
+                      <h2>Heading 5</h2>
+                      <p class="aluminip">Another exciting bit of representative placeholder
+                        content. This time, we've moved on to the second column.</p>
+                      <p><a href="#" type="button" class="btn btn-success">View Profile <i class="fa-solid fa-user"></i></a></p>
+                    </div>
+                    <div class="col-lg-4 alumini">
+                      <img class="oneimg border border-2" src="/Images/Fav.jpg" alt=""> <br>
+                      <br>
+                      <h2>Heading 6</h2>
+                      <p class="aluminip">And lastly this, the third column of representative
+                        placeholder <br></content>
+                      </p>
+                      <p><a href="#" type="button" class="btn btn-success">View Profile <i class="fa-solid fa-user"></i></a></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                <span style="margin-right:125px;;" class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next btncc" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                <span style="margin-left:125px;" class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+              <p style="padding-top:20px;"><a class="btn subssign btn-success" href="#">View More
+                  &raquo;</a></p>
+            </div>
+          </div>
+
+
+          <!-- subjects and sllybus page -->
+
+          <div class="subsly" id="subsly"><br>
+            <h1 class="subslyhead">Subjects & Syllabus</h1>
+            <hr>
+            <br>
+            <div class="fysubsly">
+              <h3>Academic Year 2021-2022 </h3><span>First Year B.Tech</span>
+              <a href="#" type="button" class="btn1">Download </a> <a href="#" type="button" class="btn1">View
+              </a>
+              <h5>Subjects and Syllabus</h5>
+            </div>
+            <br>
+            <div class="fysubsly">
+              <h3>Academic Year 2021-2022 </h3><span>Second Year B.Tech</span>
+              <a href="#" type="button" class="btn1">Download </a> <a href="#" type="button" class="btn1">View
+              </a>
+              <h5>Subjects and Syllabus</h5>
+            </div>
+            <br>
+            <div class="fysubsly">
+              <h3>Academic Year 2021-2022 <br></h3><span>Third Year B.Tech</span>
+              <a href="https://drive.google.com/file/d/1xg1kIr8pcRA5wNJGjiBGL-ch2iYQyqwO/view?usp=drivesdk" type="button" class="btn1">Download </a> <a href="https://drive.google.com/file/d/1xg1kIr8pcRA5wNJGjiBGL-ch2iYQyqwO/view?usp=drivesdk" type="button" class="btn1">View
+              </a>
+              <h5>Subjects and Syllabus</h5>
+            </div>
+            <br>
+            <div class="fysubsly">
+              <h3>Academic Year 2021-2022 <br></h3><span>Fourth Year B.Tech</span>
+              <a href="https://drive.google.com/file/d/1xg1kIr8pcRA5wNJGjiBGL-ch2iYQyqwO/view?usp=drivesdk" type="button" class="btn1">Download </a> <a href="#" type="button" class="btn1">View
+              </a>
+              <h5>Subjects and Syllabus</h5>
+            </div><br>
+
+
+          </div><br>
+
+
+          <!-- Schedule & Timetable -->
+
+          <div class="schtim" id="schtim">
+            <br>
+            <h1 class="schtimhead">Schedule & Timetable</h1>
+            <hr>
+            <br>
+            <div class="fyschtim">
+              <h3>Academic Year 2021-2022 </h3><span>First Year B.Tech</span>
+              <a href="#" type="button" class="btn1">Download </a> <a href="#" type="button" class="btn1">View
+              </a>
+              <h5>Schedule & Timetable</h5>
+            </div>
+            <br>
+            <div class="fyschtim">
+              <h3>Academic Year 2021-2022 </h3><span>Second Year B.Tech</span>
+              <a href="#" type="button" class="btn1">Download </a> <a href="#" type="button" class="btn1">View
+              </a>
+              <h5>Schedule & Timetable</h5>
+            </div>
+            <br>
+            <div class="fyschtim">
+              <h3>Academic Year 2021-2022 <br></h3><span>Third Year B.Tech</span>
+              <a href="https://drive.google.com/file/d/1xcfYIH2CeHDj_jRzzE6N2bA4y6D1s1Dw/view?usp=drivesdk" type="button" class="btn1">Download </a> <a href="#" type="button" class="btn1">View
+              </a>
+              <h5>Schedule & Timetable</h5>
+            </div>
+            <br>
+            <div class="fyschtim">
+              <h3>Academic Year 2021-2022 <br></h3><span>Fourth Year B.Tech</span>
+              <a href="#" type="button" class="btn1">Download </a> <a href="#" type="button" class="btn1">View
+              </a>
+              <h5>Schedule & Timetable</h5>
+            </div><br>
+
+
+          </div><br>
+
+
+          <!--Miniproject structure and stuff-->
+
+
+          <div class="minip" id="minip">
+            <br>
+            <h1 class="minihead">MiniProject's</h1>
+            <p class="minipara">"MiniProject's and Project's done by your Seniors" </p>
+            <hr><br>
+            <div class="dandu">
+              <img class="defination" src="/Images/defination.jpg" alt="">
+              <p class="minidef"> <br> A mini project is an assignment that you try to complete at the
+                end
+                of every
+                semester ,especially in engineering to strengthen the understanding of your
+                fundamentals
+                through effective application of theoretical concepts.<br><br><br>NOTE: The Provided
+                Material is only for reference.</p>
+            </div>
+            <div class="pro">
+              <section>
+
+                <div id="accordion">
+                  <div class="card">
+                    <div class="card-header" id="headingOne">
+                      <h5 class="mb-0">
+                        <button class="of btn link btn-link collapsed" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                          For the list of MiniProjects Click here!!!!!
+                        </button>
+                      </h5>
+                    </div>
+                    <div id="collapseOne" class="collapse " aria-labelledby="headingOne" data-parent="#accordion">
+                      <div class="card-body">
+                        <ul>
+                          <a target="_blank" href="https://docs.google.com/presentation/d/1TH-F6mF28UdyUTfRizZ0c0EZ53nWUt4C/edit?usp=sharing&ouid=116865361016031989309&rtpof=true&sd=true">
+                            <li>Women's Safety Device With GPS Tracking and Alerts
+                              (.ppt)
+                            </li>
+                          </a>
+                          <a target="_blank" href="https://drive.google.com/file/d/1c6-hHAPTnHlh-NcMUZH_-QcdkN7tcnpZ/view?usp=sharing">
+                            <li>Women's Safety Device With GPS Tracking and Alerts
+                              (Report.pdf)</li>
+                          </a>
+                          <a target="_blank" href="https://docs.google.com/presentation/d/1to0YxPqIyQP4uuTfM3kiYc_5jTx3Gseu/edit?usp=sharing&ouid=116865361016031989309&rtpof=true&sd=true">
+                            <li>Heart Beat/Pulse Measurement Device (.ppt)</li>
+                          </a>
+                          <a target="_blank" href="https://drive.google.com/file/d/10jPyo1TZRNi7wAYjM4mI1S1f5D9u0qut/view?usp=sharing">
+                            <li>Heart Beat/Pulse Measurement Device (Report.pdf)</li>
+                          </a>
+                          <a target="_blank" href="https://docs.google.com/presentation/d/1ltN-yKe46GT9VDbS6ejtOVRknxobCwfv/edit?usp=sharing&ouid=116865361016031989309&rtpof=true&sd=true">
+                            <li>Anti Sleep Alarm for Drivers (.ppt)</li>
+                          </a>
+                          <a target="_blank" href="https://drive.google.com/file/d/1a5dc0SVWHgSL2LLuBq6bhcF4JKqbi7WT/view?usp=sharing">
+                            <li>Anti Sleep Alarm for Drivers (Report.pdf)</li>
+                          </a>
+                          <a target="_blank" href="https://docs.google.com/presentation/d/1aOH5EwjLe94ucUF9j6M4OzZKPZFFvMgC/edit?usp=sharing&ouid=116865361016031989309&rtpof=true&sd=true">
+                            <li>Smart Watch - Monitoring Social Distancing (.ppt)</li>
+                          </a>
+                          <a target="_blank" href="https://drive.google.com/file/d/18Ti2Z1PwryH8-hIBO6fg5I2dNkVWISMx/view?usp=sharing">
+                            <li>Smart Watch - Monitoring Social Distancing (Report.pdf)
+                            </li>
+                          </a>
+                          <a target="_blank" href="https://docs.google.com/presentation/d/16H6L4KILcvPIrscDF_cnuw12QZyEt3i6/edit?usp=sharing&ouid=116865361016031989309&rtpof=true&sd=true">
+                            <li>Automatic Light Controller (.ppt)</li>
+                          </a>
+                          <a target="_blank" href="https://drive.google.com/file/d/1LCyuTB3gN7FheNwcmtQBYpPoE9dO4XbU/view?usp=sharing">
+                            <li>Automatic Light Controller (Report.pdf)</li>
+                          </a>
+                          <a target="_blank" href="https://docs.google.com/presentation/d/119piv4KLijiKJC6jYKyjaZb2MTKrrNge/edit?usp=sharing&ouid=116865361016031989309&rtpof=true&sd=true">
+                            <li>Fingerprint Door Lock System (.ppt)</li>
+                          </a>
+                          <a target="_blank" href="https://drive.google.com/file/d/1SNO_Ln0jT1lS1T7PXKtn4RsHvxpngcDK/view?usp=sharing">
+                            <li>Fingerprint Door Lock System (Report.pdf)</li>
+                          </a>
+                          <a target="_blank" href="https://docs.google.com/presentation/d/1uzLeevXO7RUqXr31xQ_agIa36zpbdQc5/edit?usp=sharing&ouid=116865361016031989309&rtpof=true&sd=true">
+                            <li>Temperature Scanning Gate For Corona Patient (.ppt)</li>
+                          </a>
+                          <a target="_blank" href="https://drive.google.com/file/d/1RGCbk-ea3SXFnmYblGrjfBjrMDjqTdnt/view?usp=sharing">
+                            <li>Temperature Scanning Gate For Corona Patient
+                              (Report.pdf)
+                            </li>
+                          </a>
+                          <a target="_blank" href="https://docs.google.com/presentation/d/1fGOkzxyBy_6pGwNPd9cAFH1BBMogWx36/edit?usp=sharing&ouid=116865361016031989309&rtpof=true&sd=true">
+                            <li>Smart Automation Car parking system (.ppt)</li>
+                          </a>
+                          <a target="_blank" href="https://drive.google.com/file/d/1s2fa6QdhBRZaz-MT5hM23rG6-xpjfb5P/view?usp=sharing">
+                            <li>Smart Automation Car parking system (Report.pdf)</li>
+                          </a>
+                          <a target="_blank" href="https://docs.google.com/presentation/d/1nraiK-ccGw6eaE2ZPpPxI3AJX3-zF1u1/edit?usp=sharing&ouid=116865361016031989309&rtpof=true&sd=true">
+                            <li>Obstacle Detection Robot Or Arduino Radar (.ppt)</li>
+                          </a>
+                          <a target="_blank" href="https://drive.google.com/file/d/146iLptp1UFjzlDy16-ji7epMruSOipAT/view?usp=sharing">
+                            <li>Obstacle Detection Robot Or Arduino Radar (Report.pdf)
+                            </li>
+                          </a>
+                          <a target="_blank" href="https://docs.google.com/presentation/d/1DotuREF7C_itiQe9isLN00D9dtaHjel2/edit?usp=sharing&ouid=116865361016031989309&rtpof=true&sd=true">
+                            <li>Home Automation System (.ppt)</li>
+                          </a>
+                          <a target="_blank" href="https://drive.google.com/file/d/1FDrTDIgGbMsGDNQ56MLMSUAHfzO8KH43/view?usp=sharing">
+                            <li>Home Automation System (Report.pdf)</li>
+                          </a>
+                          <a target="_blank" href="https://docs.google.com/presentation/d/1ZQ5TwdM6FjXJuaBfvDs3xj1dhASvQczr/edit?usp=sharing&ouid=116865361016031989309&rtpof=true&sd=true">
+                            <li>Wireless Notice Board (.ppt)</li>
+                          </a>
+                          <a target="_blank" href="https://drive.google.com/file/d/1tTf7nmFLLwrr9MzOQMHlCqcBXX1oq2d3/view?usp=sharing">
+                            <li>Wireless Notice Board (Report.pdf)</li>
+                          </a>
+                          <a target="_blank" href="https://drive.google.com/file/d/1p-KXrlH1VdF20H24_W1JT9_8830F6SnO/view?usp=sharing">
+                            <li>Smart Irrigation System (Report.pdf)</li>
+                          </a>
+                          <a target="_blank" href="https://docs.google.com/presentation/d/1RvnQCP5OeTXEVXVOPrb-CTwRAORZu-Qm/edit?usp=sharing&ouid=116865361016031989309&rtpof=true&sd=true">
+                            <li>Smart Stick For Blind People (.ppt)</li>
+                          </a>
+                          <a href="https://drive.google.com/file/d/1AMt6DOQKzV4O4z0Fh5l3Ma8vwIk3Eh-O/view?usp=sharing">
+                            <li>Smart Stick For Blind People (Report.pdf)</li>
+                          </a>
+                          <a target="_blank" href="https://docs.google.com/presentation/d/1dEJqOP3wZ0OyXFSV1W_rQKW4RdwgH0RP/edit?usp=sharing&ouid=116865361016031989309&rtpof=true&sd=true">
+                            <li>Obstacle Detecting Robot Using Arduino And Ultrasonic
+                              Sensors (.ppt)</li>
+                          </a>
+                          <a target="_blank" href="https://drive.google.com/file/d/1yLSUfX-FP5eDiAzAJKW3b99iXAsi_CgV/view?usp=sharing">
+                            <li>Smart Attendance Tracking System Using RFID and NodeMCU
+                              (Report.pdf)</li>
+                          </a>
+                          <a target="_blank" href="https://drive.google.com/file/d/14-1EtCdqlnAksNS_u3wewm4zDBRwEhkj/view?usp=sharing">
+                            <li>Advanced Wireless Mobile Charger (Report.pdf)</li>
+                          </a>
+                          <a target="_blank" href="https://docs.google.com/presentation/d/1ylOj2oS5MyqVdkirHGk7vQ3DC5op67ky/edit?usp=sharing&ouid=116865361016031989309&rtpof=true&sd=true">
+                            <li>Advanced Wireless Mobile Charger (.ppt)</li>
+                          </a>
+                          <a target="_blank" href="https://drive.google.com/file/d/1lYK-n2fs1fvx2Dj9MOOTSjeXZ1C0tuUY/view?usp=sharing">
+                            <li>DBATU Student Drive Website (Report.pdf)</li>
+                          </a>
+                          <a target="_blank" href="https://docs.google.com/presentation/d/17wsBDvi8jgy9HBhvvfw7GmP538l_Kayb/edit?usp=sharing&ouid=116865361016031989309&rtpof=true&sd=true">
+                            <li>Weather Station (.ppt)</li>
+                          </a>
+                          <a target="_blank" href="https://drive.google.com/file/d/1uzcSBMvsr8-gBAo5l7xwhxqUWNSFU14O/view?usp=sharing">
+                            <li>Weather Station (Report.pdf)</li>
+                          </a>
+                          <a target="_blank" href="https://drive.google.com/file/d/1vfIqKIjIHBC6j0vhdmvR0hp3t976sFbp/view?usp=sharing">
+                            <li>Earthquake Detector Alarm Using Arduino (.ppt)</li>
+                          </a>
+                          <a target="_blank" href="https://drive.google.com/file/d/1w2Cpg7mUtdHb6jeqVssVWWZ9u1juHU2n/view?usp=sharing">
+                            <li>Earthquake Detector Alarm Using Arduino (Report.pdf)
+                            </li>
+                          </a>
+                          <a target="_blank" href="https://drive.google.com/file/d/1jsWKIFMyBFEP0JCO9A7PjbcNElq5Gwdp/view?usp=sharing">
+                            <li>Gas Leakage Detector Using SMS Alert (.ppt)</li>
+                          </a>
+                          <a target="_blank" href="https://drive.google.com/file/d/1hP2l2TnL6iehBFt1YrXhhcWXncLW27jA/view?usp=sharing">
+                            <li>Gas Leakage Detector Using SMS Alert (Report.pdf)</li>
+                          </a>
+                          <a target="_blank" href="https://drive.google.com/file/d/1jsWKIFMyBFEP0JCO9A7PjbcNElq5Gwdp/view?usp=sharing">
+                            <li>Car Speed Detection using Arduino (Report.pdf)</li>
+                          </a>
+                          <a target="_blank" href="https://docs.google.com/presentation/d/1Ej4DCLqRecHtKEm9ve1dplieYCwz6Wr7/edit?usp=sharing&ouid=116865361016031989309&rtpof=true&sd=true">
+                            <li>Car Speed Detection using Arduino (.ppt)</li>
+                          </a>
+                          <a target="_blank" href="https://docs.google.com/presentation/d/1sDXCZ8BAKgRyD11FkxSBrtPdA7Zou_4o/edit?usp=sharing&ouid=116865361016031989309&rtpof=true&sd=true">
+                            <li>Color Detection Using Arduino (.ppt)</li>
+                          </a>
+                          <a target="_blank" href="https://drive.google.com/file/d/1mRencBVlBJ0ByNh99hLokf1vRTjZZ5or/view?usp=sharing">
+                            <li>Color Detection Using Arduino (Report.pdf)</li>
+                          </a>
+                          <a target="_blank" href="https://drive.google.com/file/d/1DbdSCSWLY-2sDn7DFVGpMPks5GefwAqx/view?usp=sharing">
+                            <li>Remote Control Solar Grass Cutter (Report.pdf)</li>
+                          </a>
+                          <a target="_blank" href="https://docs.google.com/presentation/d/13z1ufUjuqXorIPUsLjtAgl0UveYW3x8_/edit?usp=sharing&ouid=116865361016031989309&rtpof=true&sd=true">
+                            <li>Remote Control Solar Grass Cutter (.ppt)</li>
+                          </a>
+                          <a target="_blank" href="https://drive.google.com/file/d/12JWSgcuwBmOVgZf3fdh_DJlEMrO-uemz/view?usp=sharing">
+                            <li>Buzz Wire Game Using Arduino (Report.pdf)</li>
+                          </a>
+                          <a target="_blank" href="https://drive.google.com/file/d/1OCyHII7Qh0NeCvSzxaTIpaf2ff8uRgIz/view?usp=sharing">
+                            <li>Buzz Wire Game Using Arduino (.ppt)</li>
+                          </a>
+                          <a target="_blank" href="https://drive.google.com/file/d/1OINF4_r9_cr0JdJIhKIpqHONlRMW1RPV/view?usp=sharing">
+                            <li>Smart Gate Using RFID Module (.ppt)</li>
+                          </a>
+                          <a target="_blank" href="https://drive.google.com/file/d/1jBU0WQrVFYWJQYbzQqqxZMrgqMyBkneE/view?usp=sharing">
+                            <li>Smart Gate Using RFID Module (Report.pdf)</li>
+                          </a>
+                          <a target="_blank" href="https://docs.google.com/presentation/d/1l5filPurjhzkBZzVlWx0-KB3eUhI13eH/edit?usp=sharing&ouid=116865361016031989309&rtpof=true&sd=true">
+                            <li>Arduino Based Wireless Notice Board Using Bluetooth
+                              (.ppt)
+                            </li>
+                          </a>
+                          <a target="_blank" href="https://drive.google.com/file/d/1d2FJQBuHxewj-fw-ML_PlpMzbs0exioj/view?usp=sharing">
+                            <li>Arduino Based Wireless Notice Board Using Bluetooth
+                              (Reeport.pdf)</li>
+                          </a>
+                          <a target="_blank" href="https://docs.google.com/presentation/d/1ELRugTzj0paNMlQAg8AYxEN7WPgF-vwD/edit?usp=sharing&ouid=116865361016031989309&rtpof=true&sd=true">
+                            <li>Pharmacy Management System (.ppt)</li>
+                          </a>
+                          <a target="_blank" href="https://drive.google.com/file/d/1ScXyXg2-EsoGh6Lct3iwvrKHipK6OiP6/view?usp=sharing">
+                            <li>Pharmacy Management System (Report.pdf)</li>
+                          </a>
+                          <a target="_blank" href="https://drive.google.com/file/d/16-dDeFl48jGCsuWTsAM0joRuzjIjn3Z-/view?usp=sharing">
+                            <li>Sign Language Translator (Report.pdf)</li>
+                          </a>
+                          <a target="_blank" href="https://drive.google.com/file/d/1MgaGz9mFJZI1LCRtj4xQaLccQk7X9-IB/view?usp=sharing">
+                            <li>RC Boat Using Bluetooth Module (Report.pdf)</li>
+                          </a>
+                          <a target="_blank" href="https://docs.google.com/presentation/d/1V-91xfAOO73HkVF4f5lfMrisX7WQw2IT/edit?usp=sharing&ouid=116865361016031989309&rtpof=true&sd=true">
+                            <li>RC Boat Using Bluetooth Module (.ppt)</li>
+                          </a>
+                          <a target="_blank" href="https://docs.google.com/presentation/d/1MQLjknZ96mqmxvqlokiu-JqOZkbep6p_/edit?usp=sharing&ouid=116865361016031989309&rtpof=true&sd=true">
+                            <li>Snake Game Uisng Arduino Uno (.ppt)</li>
+                          </a>
+                          <a target="_blank" href="https://drive.google.com/file/d/1uNGlGUhyn0aKVRayk1NP_wbCpHMmnxhB/view?usp=sharing">
+                            <li>Snake Game Uisng Arduino Uno (Report.pdf)</li>
+                          </a>
+                          <a target="_blank" href="https://drive.google.com/file/d/1fmPpXkcK9moew4rX92kD8BllTGXQhSM4/view?usp=sharing">
+                            <li>Alcohol Sensing and Engine Locking System (Report.pdf)
+                            </li>
+                          </a>
+                          <a target="_blank" href="https://docs.google.com/presentation/d/1XU7OHO3PDMKVLm2l6gbXJSAqz9rmCW-w/edit?usp=sharing&ouid=116865361016031989309&rtpof=true&sd=true">
+                            <li>Alcohol Sensing and Engine Locking System (.ppt)</li>
+                          </a>
+                          <a target="_blank" href="https://drive.google.com/file/d/1M-kg1PjGfYSfUCA9Uz0YCxsl5wTbySpD/view?usp=sharing">
+                            <li>Car Ignition using Fingerprint (Report.pdf)</li>
+                          </a>
+                          <a target="_blank" href="https://drive.google.com/file/d/1msO5nzuU9rFiPrzOsxDr7DWWboYs-5an/view?usp=sharing">
+                            <li>Temperature Based Fan Speed Control And Monitoring with
+                              Arduino (Report.pdf)</li>
+                          </a>
+                          <a target="_blank" href="https://drive.google.com/file/d/1T4FrdT94dKfWIWURFUyxeaIm9hklTZp3/view?usp=sharing">
+                            <li>Single Axis Solar Tracer (Report.pdf)</li>
+                          </a>
+                          <a target="_blank" href="https://drive.google.com/file/d/1JSXMkm7V84NzZZkE7pBX9Hd_qcxqFI-g/view?usp=sharing">
+                            <li>Smart Carrier (Report.pdf)</li>
+                          </a>
+                          <a target="_blank" href="https://docs.google.com/presentation/d/155qDHGLtxMS2vKGSrtFAtefIc9NTSk1A/edit?usp=sharing&ouid=116865361016031989309&rtpof=true&sd=true">
+                            <li>Smart Carrier (.ppt)</li>
+                          </a>
+                          <a target="_blank" href="https://drive.google.com/file/d/1WMUbdRJ0vR9AY8Uz2dzzGHXoIIMesnBl/view?usp=sharing">
+                            <li>Windows Login Using Arduino Uno and RFID (Report.pdf)
+                            </li>
+                          </a>
+                          <a target="_blank" href="https://drive.google.com/file/d/1UiVQwUQLsoodRuzmc4vRU-lWu7EVLb2f/view?usp=sharing">
+                            <li>Distance Measurement Using Ultrasonic Sensor
+                              (Report.pdf)
+                            </li>
+                          </a>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+
+                </div>
+            </div>
+          </div><br>
+
+
+
+          <!--Miniproject structure and stuff-->
+
+
+          <div class="semi" id="semi">
+            <br>
+            <h1 class="minihead">Seminars's</h1>
+            <p class="minipara">"Seminars done by your Seniors" </p>
+            <hr><br>
+            <div class="dandu">
+              <img class="seminarsec" src="/Images/semiimgg.jpg" alt="">
+              <p class="minidef"> <br> A seminar is a form of academic instruction that may be either
+                at a university or a professional organization. The idea behind the seminar system
+                is to familiarize students more extensively with the methodology of their chosen
+                subject and also allow them to interact with the example of practical
+                problems.<br><br><br>NOTE: The Provided
+                Material is only for reference.</p>
+            </div>
+            <div class="pro">
+              <section>
+
+                <div id="accordion">
+                  <div class="card">
+                    <div class="card-header" id="headingOne">
+                      <h5 class="mb-0">
+                        <button class="opp btn lin btn-link collapsed" data-toggle="collapse" data-target="#collapse1" aria-expanded="false" aria-controls="collapseOne">
+                          For the list of Seminar's Click here!!!!!
+                        </button>
+                      </h5>
+                    </div>
+                    <div id="collapse1" class="collapse " aria-labelledby="headingOne" data-parent="#accordion">
+                      <div class="card-body">
+                        <ul>
+                          <a target="_blank" href="https://docs.google.com/presentation/d/1L48mJtUt0EvjAe-N5RUpnS7gotgD8n6M/edit?usp=sharing&ouid=116865361016031989309&rtpof=true&sd=true">
+                            <li>Free Space Optics Technology (.ppt)</li>
+                          </a>
+                          <a target="_blank" href="https://drive.google.com/file/d/1K8E1iORN7dA_K6MWvs2ZFBCBhr2RplVQ/view?usp=sharing">
+                            <li>Free Space Optics Technology (Report.pdf)</li>
+                          </a>
+                          <a target="_blank" href="https://docs.google.com/presentation/d/1Oqyb3N3TdjhqVFCSArftLP9bZAhcgGlw/edit?usp=sharing&ouid=116865361016031989309&rtpof=true&sd=true">
+                            <li>Otical Computers (.ppt)</li>
+                          </a>
+                          <a target="_blank" href="https://drive.google.com/file/d/14rEzzmLSTEJ-UCZY9Ou8T9dWHNj7f6TA/view?usp=sharing">
+                            <li>Optical Computers (Report.pdf)</li>
+                          </a>
+                          <a target="_blank" href="https://docs.google.com/presentation/d/1IWmEkuoHCnEsRU8ZQb8WoUj_gSc2EyR7/edit?usp=sharing&ouid=116865361016031989309&rtpof=true&sd=true">
+                            <li>Thermography (.ppt)</li>
+                          </a>
+                          <a target="_blank" href="https://drive.google.com/file/d/1jgSogNE8JQQH7cgplAQdzv1y7HgYIZ6a/view?usp=sharing">
+                            <li>Thermography (Report.pdf)</li>
+                          </a>
+                          <a target="_blank" href="https://docs.google.com/presentation/d/15Qt3q6om3a5S9ywEaK-OGALiJgmlXdEz/edit?usp=sharing&ouid=116865361016031989309&rtpof=true&sd=true">
+                            <li>WiFi Technology (.ppt)</li>
+                          </a>
+                          <a target="_blank" href="https://drive.google.com/file/d/15p3acuLgZRibgq8MbBIdHQL0Tsg47n_7/view?usp=sharing">
+                            <li>WiFi Technology (Report.pdf)</li>
+                          </a>
+                          <a target="_blank" href="https://docs.google.com/presentation/d/1DWfmnDiTV7LThfmtYGj82SOWV4YO4W2d/edit?usp=sharing&ouid=116865361016031989309&rtpof=true&sd=true">
+                            <li>E-Link Technology (.ppt)</li>
+                          </a>
+                          <a target="_blank" href="https://drive.google.com/file/d/1Ls53C1JrAifE032X4j9QNKfgfptgnAYT/view?usp=sharing">
+                            <li>E-Link Technology (Report.pdf)</li>
+                          </a>
+                          <a target="_blank" href="https://docs.google.com/presentation/d/1UijQg0aUtFOqsDOx-Qg4e3noAioSCFRl/edit?usp=sharing&ouid=116865361016031989309&rtpof=true&sd=true">
+                            <li>Brain Chip (.ppt)</li>
+                          </a>
+                          <a target="_blank" href="https://drive.google.com/file/d/1sPz3S_QHWoWjbBb2xeFNFJYAxVUEHlT4/view?usp=sharing">
+                            <li>Brain Chip (Report.pdf)</li>
+                          </a>
+                          <a target="_blank" href="https://docs.google.com/presentation/d/1gRjB3dH6tEvUuAHnU4kERNJoxPArx87s/edit?usp=sharing&ouid=116865361016031989309&rtpof=true&sd=true">
+                            <li>Optical Fibre Cable (.ppt)</li>
+                          </a>
+                          <a target="_blank" href="https://drive.google.com/file/d/11_BZ4B3HmfnJrZa7WyuI0qcDcfbaTClW/view?usp=sharing">
+                            <li>Optical Fibre Cable (Report.pdf)</li>
+                          </a>
+                          <a target="_blank" href="https://docs.google.com/presentation/d/1FO6ZW1lLrU9ryG2w7LSPGiFFkNVHJEKT/edit?usp=sharing&ouid=116865361016031989309&rtpof=true&sd=true">
+                            <li>Optical Mouse (.ppt)</li>
+                          </a>
+                          <a target="_blank" href="https://drive.google.com/file/d/12LntIPWrXhFt7gJ1M0S1YO4COn7SlTYc/view?usp=sharing">
+                            <li>Optical Mouse (Report.pdf)</li>
+                          </a>
+                          <a target="_blank" href="https://docs.google.com/presentation/d/1AW85Uuv0ZOSeCqKdzlQYSFA9xVvlpGrW/edit?usp=sharing&ouid=116865361016031989309&rtpof=true&sd=true">
+                            <li>Sensor Technology (.ppt)</li>
+                          </a>
+                          <a target="_blank" href="https://drive.google.com/file/d/1M_fWy57CGnWx7aCOzVKak0z8yc02B-Dd/view?usp=sharing">
+                            <li>Sensor Technology (Report.pdf)</li>
+                          </a>
+                          <a target="_blank" href="https://docs.google.com/presentation/d/10FEWzn5fcwoACoz8cCnGkglhJkIKrZA2/edit?usp=sharing&ouid=116865361016031989309&rtpof=true&sd=true">
+                            <li>Smart Cards (.ppt)</li>
+                          </a>
+                          <a target="_blank" href="https://drive.google.com/file/d/1dKxxRKX3BodjfwRij8l_xw9uYMvWoNrd/view?usp=sharing">
+                            <li>Smart Cards (Report.pdf)</li>
+                          </a>
+                          <a target="_blank" href="https://docs.google.com/presentation/d/1JjffJ3BdapNek8Qk7bTW5xMzEUl1QMJa/edit?usp=sharing&ouid=116865361016031989309&rtpof=true&sd=true">
+                            <li>Telemedicine Systems (.ppt)</li>
+                          </a>
+                          <a target="_blank" href="https://drive.google.com/file/d/1wTfIK-wmHw6H3jaL9EJ1u18qrobU4PTn/view?usp=sharing">
+                            <li>Telemedicine Systems (Report.pdf)</li>
+                          </a>
+                          <a target="_blank" href="https://docs.google.com/presentation/d/1HlWWoOJJiNvny9aPC_q974T3eFV5-TZK/edit?usp=sharing&ouid=116865361016031989309&rtpof=true&sd=true">
+                            <li>Acoustic Echo Cancellation (.ppt)</li>
+                          </a>
+                          <a target="_blank" href="https://drive.google.com/file/d/1Y6Ztty997SiVNXafxq0dFzsDbfAEYFKm/view?usp=sharing">
+                            <li>Acoustic Echo Cancellation (Report.pdf)</li>
+                          </a>
+                          <a target="_blank" href="https://docs.google.com/presentation/d/1y1eznoz8P_A6dik1YzvpHvsYGgBLnEMO/edit?usp=sharing&ouid=116865361016031989309&rtpof=true&sd=true">
+                            <li>Space Based Solar Power (.ppt)</li>
+                          </a>
+                          <a target="_blank" href="https://drive.google.com/file/d/16MhSn4gf81kvu9qQaOpgbMZi2mwOfhSW/view?usp=sharing">
+                            <li>Space Based Solar Power (Report.pdf) </li>
+                          </a>
+                          <a target="_blank" href="https://docs.google.com/presentation/d/1i6Soq4IU0G-UlzSEcWSHFGoY_mZhtaGY/edit?usp=sharing&ouid=116865361016031989309&rtpof=true&sd=true">
+                            <li>Space Mouse (.ppt)</li>
+                          </a>
+                          <a target="_blank" href="https://drive.google.com/file/d/1Cm3PkzOvd-_uqvqvBOvZ-rcD4ktH5hnP/view?usp=sharing">
+                            <li>Space Mouse (Report.pdf)</li>
+                          </a>
+                          <a target="_blank" href="https://docs.google.com/presentation/d/1PcePh08hA2fKV_jRAlMLf95fNM6FKjPP/edit?usp=sharing&ouid=116865361016031989309&rtpof=true&sd=true">
+                            <li>Radio Frequency Identification (.ppt)</li>
+                          </a>
+                          <a target="_blank" href="https://drive.google.com/file/d/1M7N-mpS0M1hceY8B5sowRkzYVpXNTMdy/view?usp=sharing">
+                            <li>Radio Frequency Identification (Report.pdf)</li>
+                          </a>
+                          <a target="_blank" href="https://docs.google.com/presentation/d/1cifuj1Sy44exlVpsGd_k-cf33zwzt-Ff/edit?usp=sharing&ouid=116865361016031989309&rtpof=true&sd=true">
+                            <li>Paper Battery (.ppt)</li>
+                          </a>
+                          <a target="_blank" href="https://drive.google.com/file/d/1EGvDvwEpoXot2qlcZ7AzOzmFjJTAojEF/view?usp=sharing">
+                            <li>Paper Battery (Report.pdf)</li>
+                          </a>
+                          <a target="_blank" href="https://drive.google.com/file/d/1vVyUxHtv4e-Sjf9yM4ULLJ3M9ltIm2m3/view?usp=sharing">
+                            <li>Ultrasonic Transducer (Report.pdf)</li>
+                          </a>
+                          <a target="_blank" href="https://drive.google.com/file/d/1DaBUrrQGdrZ2zN_gMF561peSH6_vMnll/view?usp=sharing">
+                            <li>Wireless Medical Monitoring System (Report.pdf)</li>
+                          </a>
+                          <a target="_blank" href="https://docs.google.com/presentation/d/1LDo-sYlXWYzYWop1qS7joN1PsNskeZ_k/edit?usp=sharing&ouid=116865361016031989309&rtpof=true&sd=true">
+                            <li>Pill Camera (.ppt)</li>
+                          </a>
+                          <a target="_blank" href="https://drive.google.com/file/d/13uc5wla3I-lGfGELAO2DDRkvPgpgr0l7/view?usp=sharing">
+                            <li>Internet Of Things (Report.pdf)</li>
+                          </a>
+                          <a target="_blank" href="https://docs.google.com/presentation/d/1hdjiJD62x5oQe7MGj4_zbKcp1KFUdms9/edit?usp=sharing&ouid=116865361016031989309&rtpof=true&sd=true">
+                            <li>Silent Sound Technology (.ppt)</li>
+                          </a>
+                          <a target="_blank" href="https://drive.google.com/file/d/1VD_nYEyfRPVJV1lhRL638qv7BGoUS2-O/view?usp=sharing">
+                            <li>Infrared Plastic Solar Cell (Report.pdf)</li>
+                          </a>
+                          <a target="_blank" href="https://drive.google.com/file/d/1izy-cdML8Ue4rxzSVtPge5aCIu5O70pX/view?usp=sharing">
+                            <li>Military Radar System (Report.pdf)</li>
+                          </a>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+
+                </div>
+              </section>
+            </div>
+          </div>
+
+
+
+
+        </div>
+
+
+
+
+        <%- include('footer'); -%>
+      </div>
+  </div>
+
+
+
+  </div>
+</body>
+
+
+<style>
+  .mothitaki {
+    height: 100%;
+    width: 100%;
+  }
+
+  .taki {
+    width: 100%;
+    /*margin-left: 1.5rem;*/
+    margin-top: 0.7rem;
+    margin-left: 20px;
+    border-radius: 10px;
+    border: 2px solid green;
+    /*position: relative;*/
+    width: 98%;
+  }
+
+  /* FACULTY IMAGES AND ALL STYLES
+---------------------------------------*/
+
+  .facultyimg {
+    /* border-radius: 10px;
+            border: 2px solid green;*/
+
+
+  }
+
+  .headfac {
+    /*padding-top: 21px;*/
+    text-align: center;
+    font-family: 'Akaya Telivigala', cursive;
+    color: rgb(4, 170, 109);
+
+  }
+
+  .facimg {
+    /* margin-top: 50px;*/
+    display: flex;
+    margin: 12px;
+    border-radius: 10px;
+    border: 1px solid #929090;
+    box-shadow: 0 0 20px 4px rgba(0, 0, 0, .1);
+    display: flex;
+
+  }
+
+  .nalbalwar {
+    text-align: center;
+    height: 519px;
+    width: 288px;
+    /* border-radius: 10px;
+            border: 2px solid rgb(100, 200, 0);*/
+    margin: 10px 42px 10px 42px;
+    display: inline-block;
+    position: sticky;
+    /*border: 1px solid;
+            padding: 10px;
+            box-shadow: 4px 4px 4px 5px #8888;*/
+
+  }
+
+
+
+  .doctor {
+    height: 274px;
+    width: 274px;
+    border-radius: 10px;
+    /*margin-top: 10px;
+            text-align: center;
+            padding: 3px;
+           border: 0px solid green;
+            margin-bottom: 10px;*/
+
+  }
+
+  .btn {
+    margin-bottom: 0px;
+  }
+
+
+
+  /* subjects and sllybus styles*/
+
+  .subsly {
+    margin: 0px 10px 0px 10px;
+    border: 0.1px solid #a2a2a2;
+    border-radius: 10px;
+    box-shadow: 0 0 20px 4px rgba(0, 0, 0, .1);
+  }
+
+  .subslyhead {
+    text-align: center;
+    font-family: 'Akaya Telivigala', cursive;
+    color: rgb(4, 170, 109);
+  }
+
+  .fysubsly {
+    /*text-align: center;*/
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #bcff8f;
+    margin: 0 50px 0 50px;
+    border: 2px solid rgb(2, 255, 15);
+    border-radius: 25px;
+    padding-left: 50px;
+  }
+
+  .fysubsly h3 {
+    color: #000000;
+  }
+
+  .fysubsly span {
+    color: rgb(3, 139, 89);
+    font-size: 25px;
+
+  }
+
+  .fysubsly h5 {
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+
+  }
+
+  .btn1 {
+    color: rgb(255, 255, 255);
+    float: right;
+    margin: 0 50px 0 0;
+    transition-duration: 0.4s;
+    background-color: #4caf50;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    /*display: inline-block;*/
+    font-size: 18px;
+    border-radius: 20px;
+    padding: 13px 30px;
+
+  }
+
+  .btn1:hover {
+    background-color: #ffffff;
+    color: #4caf50;
+  }
+
+
+
+  .fysubsly {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+
+
+
+  /* subjects and sllybus styles*/
+
+  .schtim {
+    margin: 0px 10px 0px 10px;
+    border: 0.1px solid #a2a2a2;
+    border-radius: 10px;
+    box-shadow: 0 0 20px 4px rgba(0, 0, 0, .1);
+  }
+
+  .schtimhead {
+    text-align: center;
+    font-family: 'Akaya Telivigala', cursive;
+    color: rgb(4, 170, 109);
+  }
+
+  .fyschtim {
+    /*text-align: center;*/
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #bcff8f;
+    margin: 0 50px 0 50px;
+    border: 2px solid rgb(2, 255, 15);
+    border-radius: 25px;
+    padding-left: 50px;
+  }
+
+  .fyschtim h3 {
+    color: #000000;
+  }
+
+  .fyschtim span {
+    color: rgb(3, 139, 89);
+    font-size: 25px;
+
+  }
+
+  .fyschtim h5 {
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+
+  }
+
+  .btn1 {
+    color: rgb(255, 255, 255);
+    float: right;
+    margin: 0 50px 0 0;
+    transition-duration: 0.4s;
+    background-color: #4caf50;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    /*display: inline-block;*/
+    font-size: 18px;
+    border-radius: 20px;
+    padding: 13px 30px;
+
+  }
+
+  .btn1:hover {
+    background-color: #ffffff;
+    color: #4caf50;
+  }
+
+
+
+  .fyschtim {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+
+  /* Miniproject styles and stuff */
+
+  .minip {
+    margin: 0px 10px 0px 10px;
+    border: 0.1px solid #a2a2a2;
+    border-radius: 10px;
+    box-shadow: 0 0 20px 4px rgba(0, 0, 0, .1);
+    height: 100%;
+    width: 98%;
+
+  }
+
+  .minihead {
+    text-align: center;
+    font-family: 'Akaya Telivigala', cursive;
+    color: rgb(4, 170, 109);
+  }
+
+  .minipara {
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+  }
+
+  /* dsd dropdown for departmental website */
+  .icons {
+    /*  margin-right: 6px;*/
+  }
+
+  .icons1 {
+    /* margin-right: 5px;*/
+  }
+
+  .one {
+    /*width: 50px;
+            height: 50px;
+            margin: 1px 20px 1px 20px;*/
+  }
+
+  a {
+    margin-right: 10px;
+    margin-left: 5px;
+  }
+
+  a:hover {
+    /*background-color: #EDEDED;*/
+  }
+
+  .foot:hover {
+    text-decoration: none;
+  }
+
+  .head {
+    font-family: 'Courgette', cursive;
+    text-align: center;
+    padding: 30px;
+    text-shadow: -1px -1px 0 yellow, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    font-size: 40px;
+    color: white;
+  }
+
+
+
+
+
+
+  /* Projects */
+  .projects {
+    text-align: center;
+    font-family: 'Courgette', cursive;
+    font-size: 2rem;
+  }
+
+  .dandu {
+
+    display: flex;
+  }
+
+  .card-header {
+    margin: 20px 50px 20px 50px;
+    border: none;
+    padding: 0%
+  }
+
+
+
+  .of {
+    border-radius: 10px;
+    border: 2px solid black;
+    color: rgb(45, 255, 34);
+    text-decoration: none;
+    /* padding: 10px 680px 10px 350px;*/
+    height: 100%;
+    width: 100%;
+  }
+
+  .of:hover {
+    background-color: #47B5FF;
+  }
+
+
+  .minidef {
+    float: right;
+    text-align: justify;
+    margin: 0 20px 0 20px;
+    font-family: 'Courgette', cursive;
+    font-size: 20px;
+
+  }
+
+  .pro {
+    /*  padding: 20px;
+            margin: 15px;
+            box-shadow: 0 0 20px 2px rgba(0, 0, 0, .1);
+            transition: 1s;
+            background-image: linear-gradient(#DFDFDE, #F7F5F2);*/
+  }
+
+  .defination {
+    height: 20rem;
+    width: 38rem;
+    /*margin-left: 50px;*/
+    border-radius: 10% / 50%;
+    display: inline-block;
+    align-items: center;
+    margin: 0 0px 30px 20px;
+  }
+
+  .semi {
+    width: 100%;
+    height: 100%;
+
+  }
+
+  .seminarsec {
+    height: 20rem;
+    width: 36rem;
+    /*margin-left: 50px;*/
+    border-radius: 10% / 50%;
+    display: inline-block;
+    align-items: center;
+    margin: 0 0px 30px 20px;
+
+  }
+
+  .opp {
+    border-radius: 10px;
+    border: 2px solid black;
+    color: rgb(45, 255, 34);
+    text-decoration: none;
+    /*  padding: 10px 772px 10px 350px;*/
+    height: 100%;
+    width: 100%;
+
+
+
+  }
+
+  .opp:hover {
+    background-color: #47B5FF;
+  }
+
+
+
+
+  .link {
+    font-size: 18px;
+  }
+
+  li {
+    /*margin: 0;*/
+  }
+
+  /* Responsive */
+  @media screen and (max-width:1023px) {
+    .one {
+      width: 90px;
+      height: 90px;
+    }
+
+    .low {
+      font-size: 40px;
+    }
+
+    .for {
+      font-size: 50px;
+    }
+
+    .inc {
+      font-size: 46px;
+    }
+
+    .of {
+      font-size: 23px;
+    }
+
+    .off {
+      font-size: 50px;
+    }
+
+    .so {
+      height: 75px;
+    }
+
+    .head {
+      font-size: 60px;
+      padding: 5px;
+      margin-top: 100px;
+    }
+
+    .main {
+      font-size: 1rem;
+    }
+
+    /* FOOT */
+    .fooot {
+      width: 380px;
+    }
+
+    .left {
+      padding: 0;
+    }
+
+    .fot {
+      margin-left: 5px;
+      padding: 0;
+    }
+
+    .new {
+      margin-left: 17px;
+    }
+
+    .main {
+      font-size: 2.8rem;
+    }
+
+    .time {
+      font-size: 80px;
+      padding: 40px;
+    }
+
+    .footimg {
+      margin-left: 105px;
+    }
+  }
+
+  /* end chori*/
+
+
+
+  /* Alumini Styles */
+
+  .allum {
+    margin-bottom: 30px;
+    color: rgb(4, 170, 109);
+    font-family: 'Akaya Telivigala', cursive;
+
+  }
+
+  .aluminia {
+    padding: 10px;
+    text-align: center;
+
+  }
+
+  .uplift {
+    box-shadow: 0 0 20px 4px rgba(0, 0, 0, .1);
+    transition: 2s;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border-radius: 20px;
+    padding: 70px 20px 0 20px;
+    border: 0.1px solid #a2a2a2;
+  }
+
+  .alumini {
+    padding: 20px 0;
+  }
+
+  .oneimg {
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 10px;
+    background-position: center;
+    background-size: cover;
+    box-shadow: 0px 0px 16px 0px;
+  }
+
+  .aluminip {
+    padding: 5px 15px;
+  }
+
+  .fea {
+    width: 300px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 5%;
+    background-position: center;
+    background-size: cover;
+  }
+
+
+
+  body {
+    font-family: 'Noto Serif', serif;
+  }
+
+
+  /* Fixed leftnav, full height */
+  /* .leftnav {
+            height: 85.5%;
+            width: 226px;
+            /* position: fixed; */
+  /*   z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: #ffff;
+            overflow-x: hidden;
+            padding-top: 100px;
+            margin-top: 93px;
+            margin-bottom: 30px;
+            border-radius: 10px;
+            padding-left: 10px;
+            position: fixed;
+            border: 2px solid green;
+            margin-left: 11px;
+
+        }*/
+
+  /* Style the leftnav links and the dropdown button */
+  /* .leftnav a,
+        .leftdrop {
+            padding: 6px 8px 10px 16px;
+            text-decoration: none;
+            font-size: 20px;
+            color: #1B2430;
+            display: block;
+            border: none;
+            background: none;
+            width: 100%;
+            text-align: left;
+            cursor: pointer;
+            outline: none;
+        }*/
+
+  /* On mouse-over */
+  /*  .leftnav a:hover,
+        .leftdrop:hover {
+            color: #47B5FF;
+        }*/
+
+  /* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+  /*.tank {
+            display: none;
+            background-color: #EAEAEA;
+            padding-left: 8px;
+        }*/
+
+  /* Optional: Style the caret down icon */
+  /* .fa-caret-down {
+            float: right;
+            padding-right: 8px;
+        }*/
+
+  /* Some media queries for responsiveness */
+  /*@media screen and (max-height: 450px) {
+            .leftnav {
+                padding-top: 15px;
+            }
+
+            .leftnav a {
+                font-size: 18px;
+            }
+        }*/
+</style>
+
+<script>
+  /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+  /*var dropdown = document.getElementsByClassName("topnavbar");
+  var i;
+
+  for (i = 0; i < dropdown.length; i++) {
+      dropdown[i].addEventListener("click", function () {
+          this.classList.toggle("active");
+          var dropdownContent = this.nextElementSibling;
+          if (dropdownContent.style.display === "block") {
+              dropdownContent.style.display = "none";
+          } else {
+              dropdownContent.style.display = "block";
+          }
+      });
+  }*/
+</script>
+
+</html>

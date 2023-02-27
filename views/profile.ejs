@@ -1,0 +1,112 @@
+<%- include('header'); -%>
+
+  <div class=" innerdivac">
+    <div class="sidenav">
+      <img class="oneimg border border-2" src="/Images/Fav.jpg" alt=""> <br> <br>
+      <h4><%= accountinfo.fname %>  <%= accountinfo.lname %></h4>
+      <hr class="achr">
+      <a class="aclinks" href="#aboutme"><i class="iconsac fa-solid fa-user-tie"></i>About Me</a> <br>
+      <a class="aclinks" href="#educationac"><i class="iconsac fa-solid fa-graduation-cap"></i>Education</a> <br>
+      <a class="aclinks" href="#accomac"><i class="iconsac fa-sharp fa-solid fa-trophy"></i>Accomplishments</a> <br>
+      <a class="aclinks" href="#skillsac"><i class="iconsac fa-regular fa-bullseye-arrow"></i>Skills & Interests</a> <br>
+      <a class="aclinks" href="#resumeac"><i class="iconsac fa-sharp fa-solid fa-file-user"></i>Resume</a> <br>
+      <hr class="achr">
+<p>Connect with me </p>
+<a class="aclinks" href=" <%= accountinfo.linkedin %>"><i class="iconsac1 fa-brands fa-linkedin"></i></a>
+<a class="aclinks" href="<%= accountinfo.instagram %>"><i class="iconsac1 fa-brands fa-instagram"></i></a>
+<a class="aclinks" href=""><i class="iconsac1 fa-brands fa-twitter"></i></a>
+ <a href="#"></a>
+    </div>
+
+    <div id="aboutme" class="maindivac">
+<div  class="border border-success border-1 introac">
+  <h5 style="text-align:center;"> Welcome to my profile 🙂 </h5> <br>
+
+<div class="profup">
+  <h2 style="text-align:center;" class=""> <%= accountinfo.fname %>  <%= accountinfo.lname %> </h2> <br>
+    <p style="text-align:center;"> <i class="fa-solid fa-badge-check"></i> <strong><%= accountinfo.prn %></strong> </p>
+    <hr class="border border-success border-1"> <br>
+    <div class="row">
+      <div  class="col-lg-6">
+  <p class="itemsalign" > <i class="fa-solid fa-envelope"></i>  &nbsp <%= accountinfo.email %></p>
+   <p class="itemsalign" > <i class="fa-solid fa-mobile"></i> &nbsp <%= accountinfo.mobile %></p>
+      </div>
+      <div class="col-lg-6">
+  <p class="itemsalign"> <i class="fa-solid fa-user"></i> &nbsp <%= accountinfo.gender %></p>
+    <p class="itemsalign"> <i class="fa-solid fa-cake-candles"></i> &nbsp  <%= accountinfo.dateob %></p>
+      </div>
+    </div> <br>
+<div class="profmid">
+  <h3 class="allums"><span>Profile</span></h3> <br>
+      <p class="msghod"> "<%= accountinfo.profile %>"</p>
+</div>
+</div> <br>
+
+<div style="padding:10px 30px;" class="container">
+
+
+
+<h3 class="allums">Education</h3>
+<hr class="border border-success border-1"> <br>
+
+<div class="row">
+  <p  class="itemsalign1"> <strong><%= accountinfo.tenth %> &nbsp &nbsp:</strong> &nbsp &nbsp &nbsp  &nbsp <%= accountinfo.tenththmarks %>  </p>
+  <p  class="itemsalign1"> <strong><%= accountinfo.twelth %> &nbsp :</strong> &nbsp &nbsp &nbsp &nbsp <%= accountinfo.twelthmarks %>  </p>
+</div>
+ <div class="row">
+   <div class="col-lg-2">
+     <p class="itemsalign1" > <strong>College &nbsp  :</strong> </p>
+   </div>
+   <div class="col-lg-10">
+       <p class="itemsalign1" >  <%= accountinfo.college %></p>
+   </div>
+ </div>
+ <div class="row">
+   <div class="col-lg-2">
+     <p  class="itemsalign1"> <strong>Course &nbsp :</strong>  </p>
+   </div>
+   <div class="col-lg-10">
+     <p  class="itemsalign1">  <%= accountinfo.education %></p>
+   </div>
+ </div> <br>
+
+ <h3 class="allums">Accomplishments</h3>
+ <hr class="border border-success border-1"> <br>
+
+ <div class="row">
+   <p  class="itemsalign1"> <strong><%= accountinfo.title1 %> &nbsp :</strong>  </p>
+   <p  class="itemsalign1"> <%= accountinfo.description1 %>  </p>
+   <p  class="itemsalign1"> <%= accountinfo.certificate1 %>  </p> <br>
+   <p  class="itemsalign1"> <strong><%= accountinfo.title2 %> &nbsp :</strong>  </p>
+   <p  class="itemsalign1"> <%= accountinfo.description2 %>  </p>
+   <p  class="itemsalign1"> <%= accountinfo.certificate2 %>  </p>
+ </div> <br>
+
+ <h3 class="allums">Skills</h3>
+ <hr class="border border-success border-1"> <br>
+
+<div class="row">
+  <p  class="itemsalign1"> <strong>Your programming skills &nbsp : </strong>  </p>
+  <p  class="itemsalign1 skillsit"> <%= accountinfo.prskills %>  </p>
+  <p  class="itemsalign1"> <strong>Your interpersonal skills &nbsp : </strong>  </p>
+  <p  class="itemsalign1 skillsit"> <%= accountinfo.intskills %>  </p>
+  <p  class="itemsalign1"> <strong>Your preferred languages &nbsp : </strong>  </p>
+  <p  class="itemsalign1 skillsit"> <%= accountinfo.langskills %>  </p>
+</div> <br>
+
+<h3 class="allums">Resume</h3>
+<hr class="border border-success border-1"> <br>
+
+<div class="row">
+  <p  class="itemsalign1"> <strong>Your objective &nbsp : </strong>  </p>
+  <p  class="itemsalign1"> <%= accountinfo.objective %>  </p> <br>
+  <p  class="itemsalign1"> <strong>Resume &nbsp : </strong>  </p>
+  <p  class="itemsalign1"> <%= accountinfo.resume %>  </p> <br>
+</div>
+
+</div>
+
+
+<%- include('footer'); -%>
+</div>
+  </div>

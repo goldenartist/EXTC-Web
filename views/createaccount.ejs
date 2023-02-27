@@ -1,0 +1,219 @@
+<%- include('header'); -%>
+
+<div id="aboutme" class="maindivac1">
+<div   class="border border-success border-1 introac">
+
+<h5 class="helloac">Hello, I'm</h5>
+
+<form class="" action="account" method="post">
+  <div class="row">
+    <div class="mobcrac col-lg-5">
+
+      <input class="acinputs" type="text" name="fname" value="" placeholder="First Name *" autocomplete="off" required> <br>
+    <input class="acinputs" type="text" name="lname" value="" placeholder="Last Name *" autocomplete="off" required> <br>
+    <input class="acinputs" type="number" name="prn" value="" placeholder="PRN Number (Roll No.) *" autocomplete="off" required> <br>
+    <input class="acinputs" type="email" name="email" value="" placeholder="Email Id *" autocomplete="off" required> <br>
+    <input class="acinputs" type="tel" pattern="[0-9]{10}" name="mobilen" value="" placeholder="Mobile Number (Optional)" autocomplete="off"> <br>
+    <label style="margin-left:40px;" for="">Date Of Birth :</label>
+    <input class="acinputs2" type="date" name="dob" value="" placeholder="Date of Birth (10-Jan-2000) *" autocomplete="off" required> <br>
+    <select class="acinputs"  name="gender" class="form-select mb-3" aria-label="Default select example" required >
+      <option value="">Select Gender *</option>
+      <option value="Male">Male</option>
+      <option value="Female">Female</option>
+    </select>
+    </div>
+    <div class="mobcrac col-lg-7">
+      <p><img class="accountprimage" id="output" width="200" /></p>
+      <p><label class="acinputs23" style="text-align:center;" for="file" style="cursor: pointer;">Upload Profile Image</label></p>
+        <p><input style="display:none;" type="file"  accept="image/*" name="image" id="file"  onchange="loadFile(event)" required></p>
+
+        <script>
+        var loadFile = function(event) {
+          var image = document.getElementById('output');
+          image.src = URL.createObjectURL(event.target.files[0]);
+        };
+        </script>
+<h3 class="acimg" style="text-align:center;  font-family: 'Akaya Telivigala', cursive;" >Join with us to create more interesting things</h3>
+    </div>
+  </div>
+
+<input class="acinputs1" type="text" name="address" value="" placeholder="Address (Optional)"autocomplete="off" >
+<textarea class="acinputs1 sum" name="profile" rows="4" cols="80" placeholder="Profile *" required></textarea>
+
+<hr >
+<h5 class="helloac">Education</h5>
+
+<select class="acinputs"  name="tenth" class="form-select mb-3" aria-label="Default select example" required >
+  <option value="">Select Class *</option>
+  <option value="SSC (10th)">SSC (10th)</option>
+</select>
+<input class="acinputs" type="number" name="tenththmarks" value="" placeholder="Percentage/Grade/CGPA *" required autocomplete="off">
+
+<select class="acinputs"  name="twelth" class="form-select mb-3" aria-label="Default select example" required >
+  <option value="">HSCC / Diploma *</option>
+  <option value="HSC (12th)">HSC (12th)</option>
+  <option value="Diploma">Diploma</option>
+</select>
+<input class="acinputs" type="number" name="twelthmarks" value="" placeholder="HSC/Diploma Percentage/Grade/CGPA *" required autocomplete="off">
+
+<select class="acinputs"  name="college" class="form-select mb-3" aria-label="Default select example" required  >
+  <option value="">College *</option>
+  <option value="Dr. Babasaheb Ambedkar Technological University, Lonere, Raigarh">Dr. Babasaheb Ambedkar Technological University, Lonere, Raigarh</option>
+  <option value="Other">Other</option>
+</select>
+
+<select class="acinputs" placeholder="course"  name="education" class="form-select mb-3" aria-label="Default select example" required >
+<option value="">Course *</option>
+<option value="(M.Tech) Electronics and Telecommunication Engineering - First Year">(M.Tech) Electronics and Telecommunication Engineering - First Year</option>
+<option value="(M.Tech) Electronics and Telecommunication Engineering - Second Year">(M.Tech) Electronics and Telecommunication Engineering - Second Year</option>
+<option value="(B.Tech) Electronics and Telecommunication Engineering - First Year">(B.Tech) Electronics and Telecommunication Engineering - First Year</option>
+<option value="(B.Tech) Electronics and Telecommunication Engineering - Second Year">(B.Tech) Electronics and Telecommunication Engineering - Second Year</option>
+<option value="(B.Tech) Electronics and Telecommunication Engineering - Third Year">(B.Tech) Electronics and Telecommunication Engineering - Third Year</option>
+<option value="(B.Tech) Electronics and Telecommunication Engineering - Final Year">(B.Tech) Electronics and Telecommunication Engineering - Final Year</option>
+<option value="Other Department">Other Department</option>
+</select>
+
+<hr>
+<h5 class="helloac">Accomplishments</h5>
+<input class="acinputs" type="text" name="title1" value="" placeholder="Title Of Accomplishment 1 "  autocomplete="off">
+<label for="certificate1">Certificate 1</label>
+<input class="acinputs2" type="file" name="certificate1" value="" placeholder="Certificate Of Accomplishment 2"  autocomplete="off">
+<textarea class="acinputs1" name="destitle1" rows="4" cols="80" placeholder="Description Of Accomplishment 1"></textarea>
+<input class="acinputs" type="text" name="title2" value="" placeholder="Title Of Accomplishment 2" autocomplete="off">
+<label for="certificate1">Certificate 2</label>
+<input class="acinputs2" type="file" name="certificate2" value="" placeholder="Certificate Of Accomplishment 2"  autocomplete="off">
+<textarea id="skillsac" class="acinputs1" name="destitle2" rows="4" cols="80" placeholder="Description Of Accomplishment 2"></textarea>
+<hr>
+<h5 class="helloac">Skills & Interests</h5>
+
+<select class="acinputs" placeholder="course"  name="workint" class="form-select mb-3" aria-label="Default select example" required >
+<option value="">Work Interest *</option>
+<option value="Full Stack Web Developer">Full Stack Web Developer</option>
+<option value="Front End Web Developer">Front End Web Developer</option>
+<option value="Back End Web Developer">Back End Web Developer</option>
+<option value="Cricket">Cricket</option>
+<option value="Python">Python</option>
+<option value="Machine Learning">Machine Learning</option>
+<option value="Artificial Intelligence">Artificial Intelligence</option>
+<option value="Project Management">Project Management</option>
+<option value="Game Development">Game Development</option>
+<option value="Reading">Reading</option>
+<option value="Teaching">Teaching</option>
+<option value="App Development">App Development</option>
+<option value="Java">Java</option>
+<option value="C++">C++</option>
+<option value="C">C</option>
+<option value="Singing">Singing</option>
+<option value="Cooking">Cooking</option>
+<option value="Travelling">Travelling</option>
+<option value="Architecture">Architecture</option>
+<option value="Engineering">Engineering</option>
+<option value="Student">Student</option>
+</select> <br> <br>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/bbbootstrap/libraries@main/choices.min.css">
+<script src="https://cdn.jsdelivr.net/gh/bbbootstrap/libraries@main/choices.min.js"></script>
+       <select id="choices-multiple-remove-button" name="prskills" placeholder="Your programming skills" multiple>
+            <option value="HTML">HTML</option>
+            <option value="Jquery">Jquery</option>
+            <option value="CSS">CSS</option>
+            <option value="C++">C++</option>
+            <option value="Bootstrap">Bootstrap</option>
+            <option value="Java">Java</option>
+            <option value="Javascript">Javascript</option>
+            <option value="Angular">Angular</option>
+            <option value="Python">Python</option>
+            <option value="React">React</option>
+            <option value="SQL">SQL</option>
+            <option value="NOSQL">NOSQL</option>
+            <option value="NodeJS">NodeJS</option>
+            <option value="C">C</option>
+
+        </select>
+        <select id="choices-multiple-remove-button" name="intskills" placeholder="Your interpersonal skills" multiple>
+             <option value="Management">Management</option>
+             <option value="engineering">Engineering</option>
+             <option value="Team Work">Team Work</option>
+             <option value="Technical Support">Technical Support</option>
+             <option value="Presentation">Presentation</option>
+             <option value="Handwriting">Handwriting</option>
+             <option value="Leadership">Leadership</option>
+             <option value="Communication">Communication</option>
+             <option value="Cooking">Cooking</option>
+             <option value="Sports">Sports</option>
+             <option value="Fashion">Fashion</option>
+             <option value="Technology">Technology</option>
+             <option value="Software">Software</option>
+             <option value="Hardware">Hardware</option>
+
+         </select>
+        <select  id="choices-multiple-remove-button" name="langskills" placeholder="Your preferred languages" multiple>
+             <option value="Marathi">Marathi</option>
+             <option value="English">English</option>
+             <option value="Hindi">Hindi</option>
+             <option value="Bengali">Bengali</option>
+             <option value="Gujarati">Gujarati</option>
+             <option value="Telugu">Telugu</option>
+             <option value="Punjabi">Punjabi</option>
+             <option value="Kashmiri">Kashmiri</option>
+             <option value="Sanskrit">Sanskrit</option>
+             <option value="Other">Other</option>
+         </select>
+<script type="text/javascript">
+  $(document).ready(function(){
+     var multipleCancelButton = new Choices('#choices-multiple-remove-button', {
+        removeItemButton: true,
+        maxItemCount:10,
+        searchResultLimit:20,
+        renderChoiceLimit:20
+      });
+ });
+</script>
+
+<hr id="socialac">
+<h5 class="helloac">Social Connect</h5>
+
+<input class="acinputs1" type="text" name="linkedin" value="" placeholder="LinkedIn Profile Link" autocomplete="off">
+<input class="acinputs1" type="text" name="instagram" value="" placeholder="Instagram Profile Link" autocomplete="off">
+<input id="resumeac"class="acinputs1" type="text" name="twitter" value="" placeholder="Twitter Profile Link" autocomplete="off">
+
+<hr>
+<h5 class="helloac">Resume</h5>
+
+<div class="row">
+  <textarea id="skillsac" class="acinputs1" name="objective" rows="4" cols="80" placeholder="Your professional objective"></textarea> <br>
+  <div class="col-lg-6">
+
+    <p> Do you have a well prepared resume/CV ? </p>
+         <input type="radio" name = "ans" value="yes"> Yes &nbsp &nbsp &nbsp &nbsp
+         <input type="radio" name = "ans" value="No"> No &nbsp &nbsp &nbsp &nbsp
+         <input type="radio" name = "ans" value="Want to make" checked> Want to make <br> <br>
+
+         <label for="">Upload Resume :</label>
+         <input class="acinputs" type="file" name="resume" value="" autocomplete="off"> <br> <br>
+         <p>If you have not created a resume yet ? , Lets Create It !!</p>
+         <ul>
+         <li>&nbspTo create a unique resume online <a class="resumelink" href="https://resume.io/"> (Resume) </a>
+         </li>
+         <li>&nbsp To built Reactive Resume online <a class="resumelink" href="https://rxresu.me/"> (Rxresu) </a>
+         </li>
+         <li>&nbsp To built a free online resume with templates<a class="resumelink" href="https://flowcv.com/"> (Flowcv) </a>
+         </li>
+         </ul>
+  </div>
+  <div class="col-lg-6 mobset">
+<img class="resumeimg" src="/Images/placement.png" alt="">
+  </div>
+   </div>
+
+<hr>
+
+<button class="btn acbtn btn-outline-success" type="submit" name="buttoncr">Submit</button>
+</form>
+</div>
+
+
+</div>
+
+<%- include('footer'); -%>

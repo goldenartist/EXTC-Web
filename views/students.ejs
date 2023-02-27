@@ -1,0 +1,74 @@
+<%- include('header'); -%>
+
+<div style="margin: 0;" class="row studentmain">
+<div class="col-lg-6 ">
+  <h4 style="color:white;" class="norm1">"Welcome to student community"</h4>
+  <h1 class="fw-light headinggoalalbum"><span class="oneal">Electronics</span> & <span class="twoal">Telecommunication</span> Engineering </h1> <br>
+<p style="color:white;" class="lead ">We, the electronic engineering student brings up the evergreen ideas that lights the millions future of emerging technology.
+</p>
+<a href="createaccount">  <button class="btn btnup1 btn-primary"type="button" name="button">Create Account</button></a>
+</div>
+<div class="mobset col-lg-6">
+  <form class="" action="students" method="post">
+    <input class="acinputsfoot" type="text" name="ssname" value="" placeholder="Search student">
+    <button  class="btn btn-success" type="submit" name="button">Search</button>
+  </form>
+<img class="studentimg" src="/Images/student.png" alt="">
+</div>
+</div>
+<section>
+
+<div style="text-align:center;" class=""> <br>
+  <h1 class="allums">Students section</h1>
+  <hr class="border border-success border-1">
+  <h6>The opportunity to create friendships through the student search facility.</h6> <br>
+  </div>
+
+<div class="studentssection">
+
+  <% accountinfo.forEach(function(student){ %>
+
+  <div class="studup border border-success border-1 row">
+    <div class="col-lg-3 ">
+      <img class="oneimg12 border border-2" src="/Images/Fav.jpg" alt=""> <br>
+    </div>
+    <div style="padding:0;" class="col-lg-6">
+<h3 class="profilename" style="  color:rgb(4, 170, 109);" > <strong>  <%= student.fname %> <%= student.lname %></strong></h3> <br>
+<div style="text-align:left;" class="">
+  <p> <i class="fa-solid fa-badge-check"></i> &nbsp <%= student.prn %></p>
+  <p><%= student.education %></p>
+  <p><%= student.college %></p>
+  <div class="row">
+    <div class="col-lg-6">
+      <p><a style="text-decoration:none;" href="<%= student.linkedin %>"><i  class="fa-brands fa-linkedin iconsset"></i> </a>
+      <a style="text-decoration:none;" href="<%= student.instagram %>"> <i  class="fa-brands fa-instagram iconsset"></i> </a>
+         <a style="text-decoration:none;" href="<%= student.education %>"><i  class="fa-brands fa-twitter iconsset"></i> </a></p>
+             </div>
+    <div class="col-lg-6">
+      <form class="stmobile" action="/students" method="post">
+           <button class="btn stprofile btn-outline-success" type="submit" value="<%= student.email %>" name="button">View profile &raquo;</button>
+         </form>
+    </div>
+  </div>
+</div>
+    </div>
+    <div style="text-align:left;padding:0 30px;" class="col-lg-3 stone">
+      <div class="">
+        <p class="text-muted">Date Of Birth :</p>
+        <p><%= student.dateob %></p>
+        <p class="text-muted">Work Interest :</p>
+        <p><%= student.workint %></p>
+        <p class="text-muted">Joined on :</p>
+        <p><%= student.joined %></p>
+         <form class="stmobile1" action="/students" method="post">
+               <button class="btn stprofile btn-outline-success" type="submit" value="<%= student.email %>" name="button">View profile &raquo;</button>
+             </form>
+      </div>
+    </div>
+  </div>
+
+<%  }); %>
+
+</div>
+</section>
+<%- include('footer'); -%>
